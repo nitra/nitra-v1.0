@@ -1,0 +1,138 @@
+.section {
+	padding: 0;
+}
+
+.hero {
+	width: 100%;
+}
+
+.breadcrumbs {
+	display: flex;
+	/*margin-bottom: auto;*/
+	position: absolute;
+	top: 20px;
+}
+
+.breadcrumbs li {
+	list-style-type: none;
+	margin-right: 30px;
+	position: relative;
+	color: #000;
+}
+
+.breadcrumbs li:first-child:before {
+	display: none;
+}
+
+.help {
+	padding-left: 10%;
+	margin-bottom: 0%;
+}
+
+.breadcrumbs li:before {
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	left: -17px;
+	top: 50%;
+	margin-top: -5px;
+}
+
+.hero-body .container {
+	max-width: 800px;
+}
+
+.hero-foot__link {
+	padding: 30px;
+	display: block;
+	margin-bottom: 1%;
+}
+
+.hero-description div {
+	margin-bottom: 1rem;
+}
+
+.hero-description a {
+	text-decoration: underline;
+}
+
+.bold-title {
+	text-transform: uppercase;
+}
+
+.scanner__item {
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.scanner__item > div {
+	width: 50%;
+}
+
+.item__content {
+	padding-right: 5%;
+}
+
+.content__title {
+	font-size: 25px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.scanner__item__result {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-top: 30px;
+}
+
+.result__indicators {
+	width: 100%;
+	position: relative;
+	margin-left: 10%;
+}
+
+.result__chart {
+	width: 100%;
+	display: flex;
+  justify-content: space-around;
+  border: 1px solid;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+  padding: 10px 0;
+  background: #2eea38; /* Old browsers */
+background: -moz-linear-gradient(left, #2eea38 0%, #7cbf24 32%, #cee825 51%, #cee825 66%, #c0c920 71%, #ff1e1e 96%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #2eea38 0%,#7cbf24 32%,#cee825 51%,#cee825 66%,#c0c920 71%,#ff1e1e 96%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #2eea38 0%,#7cbf24 32%,#cee825 51%,#cee825 66%,#c0c920 71%,#ff1e1e 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+.result__time {
+	position: absolute;
+	top: -100px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 50px;
+	color: #000;
+	background-image: url(../img/two-down-chevron.svg);
+	background-repeat: no-repeat;
+	-webkit-background-size: 20px;
+	background-size: 27px;
+	background-position: 76% 75%;
+	padding-left: 70%;
+}
+
+.result__time .time {
+	font-size: 40px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.link-more {
+	text-decoration: underline;
+}

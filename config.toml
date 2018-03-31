@@ -1,0 +1,79 @@
+baseURL             = "https://nitra.bitbucket.io/"
+languageCode = "ru-ru"
+title = "Nitra new site"
+theme = "introduction"
+enforce_ssl         = false
+builddrafts         = false                             # Include pages with draft status of true
+canonifyurls        = true                              # Turns relative urls into absolute urls
+# disqusshortname   = "xxx"                             # Enable Disqus for comments
+# googleAnalytics   = "UA-16087162-5"
+defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = true
+
+# enableMissingTranslationPlaceholders = true 
+[params] 
+    themestyle          = "light"                        # Choose 'light' or 'dark'
+    introheight         = "fullheight"                       # Input either 'medium' or 'large' or 'fullheight'
+    localtime           = false                          # Show your current local time in contact section
+    timezone            = "America/Los_Angeles"         # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+    dateform            = "Jan 2, 2006"
+    dateformfull        = "Mon Jan 2 2006 15:04:05 EST"
+    cachebuster         = false                         # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
+    fadein              = false                          # Turn on/off the fade-in effect
+    faviconfile         = "img/fav.ico"
+    pygmentsStyle       = "monokai"                     # Choose theme: https://help.farbox.com/pygments.html
+    pygmentsCodeFences  = true
+
+    showblog            = false                          # Show Blog section on home page
+    showprojects        = true                          # Show Projects section on home page
+    projectcolumns      = "3"                           # Choose "2" or "3" columns for projects section
+    placeholderimg      = "/img/workday.jpg"            # For Projects without image
+    showallposts        = false                         # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
+    showlatest          = false                          # Show latest blog post summary
+    sharebuttons        = true                          # On post pages, show share this social buttons
+
+    # Share buttons
+    sharetwitter        = true
+    sharefacebook       = true
+    sharepinterest      = false
+    sharegoogleplus     = true
+
+    email               = "ai@nitra.ai"         # Shows in contact section, or leave blank to omit
+    avatar              = "img/profile.jpg"             # Path to image in static folder eg. img/avatar.png, or comment out to remove
+    # Navigation
+    [params.breadcrumbs]
+
+
+# Social icons appear in introduction and contact section. Add as many more as you like.
+# Find icon names here: http://fontawesome.io/cheatsheet/
+
+[[params.social]]
+    url = "https://twitter.com/nitra_ai"
+    icon = "twitter"
+
+[[params.social]]
+    url = "https://www.facebook.com/Nitralabs-275977425891580"
+    icon = "facebook"
+
+#[[params.social]]
+#    url = "https://linkedin.com/"
+#    icon = "linkedin"
+
+[languages]
+[languages.ru]
+    welcome = "Привет, я"
+    bloghead            = "Blog"                   
+    firstname           = "Nitra"                
+    tagline             = "искусственный интелект, виртуальный IT менеджер"
+    optimization        = "Оптимизирую скорость загрузки Люмик.ру и настрою защиту данных."
+    mission             = "Моя миссия находить слабые зоны на сайте и исправлять их в режиме реального времени."
+    effect              = "И, да, все верно - спарвляюсь с этим <a href=\"#\">эффективнее</a> чем специалист"
+    scan                = "Я просканировал Люмик.ру. Давайте посмотрим результаты."
+                          
+
+[[params.hero]]
+    title = "hero title"
+
+[languages.ua]
+    firstname           = "Привіт, я Nitra" 
+    tagline             = "Я допоможу зробити \"Ваш сайт\" кращим"       # Appears after the introduction

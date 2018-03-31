@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@bitbucket.org:nitra/nitra.bitbucket.io.git
+	branch = master
