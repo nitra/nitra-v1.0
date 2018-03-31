@@ -1,4 +1,4 @@
-baseURL             = "https://nitra.bitbucket.io/"
+baseURL             = "/"
 languageCode = "ru-ru"
 title = "Nitra new site"
 theme = "introduction"

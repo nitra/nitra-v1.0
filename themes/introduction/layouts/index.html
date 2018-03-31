@@ -19,10 +19,10 @@
                         {{ .Site.Params.tagLine }}
                     </h3>
                     <div class="hero-description">
-                        <div>{{ .Site.Params.optimization | safeHTML }}</div>
-                        <div>{{ .Site.Params.mission | safeHTML }}</div>
-                        <div>{{ .Site.Params.effect | safeHTML }}</div>
-                        <div>{{ .Site.Params.scan | safeHTML }}</div>
+                        <div>{{ with .Site.Params.optimization }}{{ .}}{{ end }}</div>
+                        <div>{{ with .Site.Params.mission }}{{ .}}{{ end }}</div>
+                        <div>{{ with .Site.Params.effect }}{{ . | safeHTML }}{{ end }}</div>
+                        <div>{{ with .Site.Params.scan }}{{ .}}{{ end }}</div>
                     </div>
                     <!-- <div class="{{ if .Site.Params.fadeIn }}fade-in three{{ end }}">
                         {{ partial "social.html" . }}
