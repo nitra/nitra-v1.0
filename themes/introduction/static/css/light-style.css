@@ -667,11 +667,6 @@ table th {
 }
 
 .hero-body {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
     padding: 3rem 1.5rem
 }
 
@@ -6821,7 +6816,7 @@ html {
 }
 
 body {
-    font-size: 18px;
+    font-size: 17px;
     font-family: Roboto, sans-serif;
     color: #4a4a4a;
     background-color: #fff
@@ -6914,7 +6909,7 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -6948,7 +6943,8 @@ img {
 }
 
 .bold-title {
-    font-size: 6rem
+    font-size: 5rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {

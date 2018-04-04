@@ -3,11 +3,28 @@
 }
 
 .hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-body {
+	padding-top: 0;
+}
+
+.hero-foot {
+	position: absolute;
 	width: 100%;
+	z-index: 2;
+}
+
+.watch-result {
+	margin-top: 3rem;
 }
 
 .breadcrumbs {
-	display: flex;
+	display: none;
 	/*margin-bottom: auto;*/
 	position: absolute;
 	top: 20px;
@@ -42,14 +59,18 @@
 	margin-top: -5px;
 }
 
-.hero-body .container {
+/*.hero-body .container {
 	max-width: 800px;
-}
+}*/
 
 .hero-foot__link {
 	padding: 30px;
 	display: block;
-	margin-bottom: 1%;
+	padding-bottom: 0;
+	text-align: right;
+	padding-right: 10%;
+	width: 100%;
+	display: inline-block;
 }
 
 .hero-description div {
@@ -63,6 +84,15 @@
 .bold-title {
 	text-transform: uppercase;
 }
+
+.section.scanner {
+/*	display: flex;
+	align-items: center;
+	height: 100vh;*/
+	padding-top: 5rem;
+	margin-bottom: 5rem;
+}
+
 
 .scanner__item {
     display: flex;
@@ -112,19 +142,29 @@ background: linear-gradient(to right, #2eea38 0%,#7cbf24 32%,#cee825 51%,#cee825
 }
 
 .result__time {
-	position: absolute;
-	top: -100px;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	width: 100%;
-	padding-bottom: 50px;
+	padding-bottom: 10px;
 	color: #000;
-	background-image: url(../img/two-down-chevron.svg);
-	background-repeat: no-repeat;
-	-webkit-background-size: 20px;
-	background-size: 27px;
-	background-position: 76% 75%;
 	padding-left: 70%;
+	padding-bottom: 40px;
+}
+
+.icon {
+	width: 30px;
+	margin-left: -40px;
+	position: relative;
+	bottom: -40px;
+	left: -25px;
+}
+
+.icon img {
+	width: 30px;
+	box-shadow: none;
+	border: none;
+	width: 30px;
 }
 
 .result__time .time {
@@ -135,4 +175,13 @@ background: linear-gradient(to right, #2eea38 0%,#7cbf24 32%,#cee825 51%,#cee825
 
 .link-more {
 	text-decoration: underline;
+}
+
+.button-wrap {
+	text-align: center;
+}
+
+.forecast {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
