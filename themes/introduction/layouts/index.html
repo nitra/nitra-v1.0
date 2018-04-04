@@ -157,60 +157,7 @@
         </div>
     </div>
     </div>    
-    
-    <!-- Tell them all about it! -->
-    <div class="section" id="about">
-        <div class="container">
-        <h2 class="title is-2 has-text-centered">Что можно улучшить в "Вашем сайте"</h2>
-    
-            <div class="columns"><!-- Avatar and about.md side by side except mobile -->
-                {{ if .Site.Params.avatar }}
-                <div class="column is-one-third has-text-centered">
-                  <img class="img-responsive avatar" src="/{{ .Site.Params.avatar }}" alt="My profile picture.">
-                </div>
-                {{ end }}
-                <div class="column markdown">
-                    {{ range .Data.Pages }}
-                        {{if eq .Title "About" }}
-                                {{.Content}}
-                            {{end}}
-                        {{ end }}
-                </div>
-            </div>
-        </div><!-- End About container-->
-    
-        <div class="container has-text-centered top-pad"><a href="#top"><i class="fa fa-arrow-up"></i></a></div>
-    </div><!-- End About section -->
-    
-
-    
-    <!-- Now for some cool projects -->
-        {{ if .Site.Params.showProjects }}
-        <div class="section" id="projects">
-            {{ partial "projects.html" . }}
-        </div><!-- End Projects section -->
-        {{ end }}
-    
-    
-    <!-- Let's show some blog posts -->
-        {{ if .Site.Params.showBlog }}
-        <div class="section" id="blog">
-            {{ partial "blogsection.html" . }}
-        </div><!-- End Blog section -->
-    
-        {{ end }}
-    
-    <!-- Let's chat, shall we? -->
-    <div class="section" id="contact">
-        <div class="container has-text-centered">
-        <h2 class="title is-2">Контакты</h2>
-            <div class="markdown">
-                {{ range .Data.Pages }}
-                    {{if eq .Title "Contact" }}
-                            {{.Content}}
-                        {{end}}
-                    {{ end }}
-            </div>
+   
     
             {{ if .Site.Params.localTime }}
             <p>My current local time is <span id="time"></span>.</p>
@@ -230,7 +177,6 @@
             <h3 class="subtitle is-3 has-text-centered top-pad"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></h3>
             {{ end }}
     
-            {{ partial "social.html" . }}
         </div><!-- End Contact container -->
     
         <div class="container has-text-centered top-pad"><a href="#top"><i class="fa fa-arrow-up"></i></a></div>
