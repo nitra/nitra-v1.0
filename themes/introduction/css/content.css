@@ -189,6 +189,11 @@
   border: 1px solid #dddddd;
   padding-top: 10rem;
   text-align: center;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.connection__card .card-body:hover {
+  background-color: #eeeeee;
 }
 .connection__card .card__price {
   font-size: 3rem;
