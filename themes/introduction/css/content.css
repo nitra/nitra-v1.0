@@ -194,6 +194,14 @@
   font-size: 3rem;
 }
 
+.step {
+  margin-bottom: 2rem;
+}
+
 .step-two {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+}
+
+.step-one__text {
+  padding-top: 1rem;
 }
