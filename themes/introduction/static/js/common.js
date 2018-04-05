@@ -1,71 +1,19 @@
-$(document).ready( function(){
+$(document).ready(function() {
 
-	$('#fullpage').fullpage({
-		//Navigation
-		menu: '#menu',
-		lockAnchors: false,
-		anchors:['nitra', 'scanner', 'Page3', 'Page4', 'Page5', 'Page6'],
-		navigation: false,
-		navigationPosition: 'right',
-		navigationTooltips: ['one', 'two', 'three'],
-		showActiveTooltip: false,
-		slidesNavigation: false,
-		slidesNavPosition: 'bottom',
+    $(".ninja-btn").click(function() {
+        $(this).toggleClass("active");
+        $("#side-nav").toggleClass("active");
+        $("#content").toggleClass("active");
+    });
 
-		//Scrolling
-		css3: true,
-		scrollingSpeed: 1000,
-		autoScrolling: true,
-		fitToSection: true,
-		fitToSectionDelay: 1000,
-		scrollBar: false,
-		easing: 'easeInOutCubic',
-		easingcss3: 'ease',
-		loopBottom: false,
-		loopTop: false,
-		loopHorizontal: true,
-		continuousVertical: false,
-		continuousHorizontal: false,
-		scrollHorizontally: false,
-		interlockedSlides: false,
-		dragAndMove: false,
-		offsetSections: false,
-		resetSliders: false,
-		fadingEffect: false,
-		normalScrollElements: '#element1, .element2',
-		scrollOverflow: false,
-		scrollOverflowReset: false,
-		scrollOverflowOptions: null,
-		touchSensitivity: 15,
-		normalScrollElementTouchThreshold: 5,
-		bigSectionsDestination: null,
-
-		//Accessibility
-		keyboardScrolling: true,
-		animateAnchor: true,
-		recordHistory: true,
-
-		//Design
-		//fixedElements: '#header, .footer',
-		responsiveWidth: 0,
-		responsiveHeight: 0,
-		responsiveSlides: false,
-		parallax: false,
-		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-
-		//Custom selectors
-		sectionSelector: '.section',
-		slideSelector: '.slide',
-
-
-		//events
-		onLeave: function(index, nextIndex, direction){},
-		afterLoad: function(anchorLink, index){},
-		afterRender: function(){},
-		afterResize: function(){},
-		afterResponsive: function(isResponsive){},
-		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-	});
+    $("#content").click(function() {
+        if ($(this).hasClass("active")) {
+            $(".ninja-btn").toggleClass("active");
+            $(this).toggleClass("active");
+            $("#side-nav").toggleClass("active");
+        } else {
+            console.log('.');
+        }
+    });
 
 });
