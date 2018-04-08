@@ -16,6 +16,14 @@
 .ninja-btn.active span:before { transform: rotate(-135deg); -webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -o-transform: rotate(-135deg); -ms-transform: rotate(-135deg); }
 .ninja-btn.active span:after { transform: rotate(135deg); -webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -o-transform: rotate(135deg); -ms-transform: rotate(135deg); }
 
+#payments .icons .fa { font-size: 1.8em; }
+
+.card-header .icons .fa-cc-visa { color: #ffb85f; }
+.card-header .icons .fa-cc-discover { color: #027878; }
+.card-header .icons .fa-cc-amex { color: #eb4960; }
+
+.card-body label { font-size: 14px; }
+
 .section { padding: 0; }
 
 .hero { width: 100%; display: flex; align-items: center; justify-content: center; }
@@ -72,7 +80,7 @@
 
 .connection__card a { display: block; text-align: center; }
 .connection__card .card-body { border: 1px solid #dddddd; padding-top: 10rem; text-align: center; background-color: white; transition: all 0.3s ease; }
-.connection__card .card-body:hover { background-color: #eeeeee; }
+.connection__card .card-body:hover { background-color: #eeeeee; text-decoration: none; }
 .connection__card .card__price { font-size: 3rem; }
 
 .step { margin-bottom: 2rem; }
@@ -96,7 +104,12 @@
 
 .social-icons { margin-bottom: 1rem; }
 
+.mb-1rem { margin-bottom: 1rem; }
+
 .single-page .section { padding-top: 4rem; }
+
+#payments.section { padding-top: 4rem; }
+#payments.section .custom-checkbox { line-height: 18px; margin-bottom: 1rem; }
 
 .sigle__page__content { width: 60%; margin: 0 auto; }
 

@@ -1,0 +1,134 @@
+{{ partial "header.html" . }}
+
+<body class="connection">
+    <a class="ninja-btn" title="menu"><span></span></a>
+    <!-- Side Nav -->
+    <div id="side-nav">
+        <h1>Menu</h1>
+        <ul>
+            <li><a href="#">Nitra</a></li>
+            <li><a href="#">Google Cloud</a></li>
+            <li><a href="#">Platform</a></li>
+            <li><a href="#">Program</a></li>
+        </ul>
+    </div>
+    <div id="content" class="">
+        <div class="section" id="payments">
+            <!-- Parent section -->
+
+            <div class="container hero {{ if .Site.Params.fadeIn }} fade-in one {{ end }}">
+                <!-- Begin Title -->
+                <h1 class="title is-3">{{ .Title }}</h1>
+            </div>
+            <!-- End Title -->
+
+            <!-- Everything below fades in two! -->
+            <div class="section {{ if .Site.Params.fadeIn }} fade-in two {{ end }}">
+                <div class="container markdown {{ if .Site.Params.fadeIn }} fade-in two {{ end }} top-pad">
+                  <div class="row">
+                    <div class="col-md-4 offset-md-4 col-10 offset-1 pl-0 pr-0">
+                      <div class="card">
+                          <div class="card-header">
+                            <div class="row" style="width: 100%">
+                            <div class="col-md-5 col-12 pt-2 pr-0">
+                              <h6 class="m-0"><strong>Детали оплаты</strong></h6>
+                            </div>
+                            <div class="col-md-7 col-12 icons pr-0">
+                              <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+                              <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
+                              <i class="fa fa-cc-discover fa-2x" aria-hidden="true"></i>
+                              <i class="fa fa-cc-amex fa-2x" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="card-body">
+                            <form>
+                              <div class="form-group">
+                                  <div class="input-group">
+                                    <input readonly type="text" class="form-control border-right-0" id="validationTooltipCardNumber" placeholder="20">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text rounded-right" id="validationTooltipCardNumber">
+                                          <i class="fa fa-usd" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="validationTooltipCardNumber"><strong>НОМЕР КАРТЫ</strong></label>
+                                  <div class="input-group">
+                                    <input type="text" class="form-control border-right-0" id="validationTooltipCardNumber" placeholder="Номер карты">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text rounded-right" id="validationTooltipCardNumber"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-7 col-12">
+                                  <div class="form-group">
+                                    <label for="exampleInputExpirationDate"><strong>СРОК ДЕЙСТВИЯ</strong></label>
+                                    <div class="input-group">
+                                      <input type="text" class="form-control border-right-0" id="exampleInputExpirationDate" placeholder="MM / YY">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text rounded-right" id="validationTooltipCardNumber">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                          </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                  <div class="form-group">
+                                    <label for="exampleInputCvcCode"><strong>CVC КОД</strong></label>
+                                    <input type="text" class="form-control" id="exampleInputCvcCode" placeholder="CVC">
+                                </div>
+                                </div>
+                                <div class="col-12 mb-1rem">
+                                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlInline" required>
+                                    <label class="custom-control-label" for="customControlInline">Согласен с условиями пользовательского <a href="#">соглашения</a></label>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="btn btn-info w-100 pb-2 pt-2">Подтвердить</button>
+                          </form>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    {{ .Content }}
+                </div>
+                <!-- End blog post content -->
+
+                <div class="disqus">
+                    {{ template "_internal/disqus.html" . }}
+                </div>
+
+                <!-- <div class="container has-text-centered top-pad">
+                <a href="{{ .Permalink }}#top">
+                    <i class="fa fa-arrow-up"></i>
+                </a>
+
+            </div> -->
+
+                {{ partial "footer.html" . }}
+            </div>
+            <!-- End fade in two -->
+        </div>
+        <!-- End parent section -->
+
+    </div>
+
+    <!-- Bitty scrolling links script -->
+    <script>
+        $('a[href^="{{ .Permalink }}#"]').click(function(e) {
+            e.preventDefault();
+            var target = this.hash;
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 500);
+            return false;
+        })
+    </script>
+
+</body>
