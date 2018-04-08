@@ -1,0 +1,31 @@
+.single-page .section {
+  padding-top: 4rem;
+}
+
+.sigle__page__content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.page-icon {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.page-icon .fa {
+  font-size: 3rem;
+}
+
+.money-back {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 35px;
+}
+.money-back .fa {
+  font-size: 3rem;
+  display: inline-block;
+  margin: 0 3rem;
+}

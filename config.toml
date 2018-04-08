@@ -13,7 +13,7 @@ defaultContentLanguageInSubdir = true
 # enableMissingTranslationPlaceholders = true 
 [params] 
     themestyle          = "light"                        # Choose 'light' or 'dark'
-    introheight         = "fullheight"                       # Input either 'medium' or 'large' or 'fullheight'
+    introheight         = "fullheight"                       # Input either 'medium' or 'large' or z'fullheight'
     localtime           = false                          # Show your current local time in contact section
     timezone            = "America/Los_Angeles"         # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
     dateform            = "Jan 2, 2006"
@@ -37,7 +37,7 @@ defaultContentLanguageInSubdir = true
     sharefacebook       = true
     sharepinterest      = false
     sharegoogleplus     = true
-
+    footerPhone         = "+371 267 59 278"
     email               = "ai@nitra.ai"         # Shows in contact section, or leave blank to omit
     avatar              = "img/profile.jpg"             # Path to image in static folder eg. img/avatar.png, or comment out to remove
     # Navigation
@@ -68,7 +68,7 @@ defaultContentLanguageInSubdir = true
     tagline             = "искусственный интеллект, виртуальный IT ассистент."
     optimization        = "Моя задача находить слабые зоны  на сайте и исправлять их в режиме реального времени."
     mission             = "Оптимизирую скорость загрузки Люмик.ру и настрою защиту данных."
-    effect              = "И, да, все верно -  справляюсь с этим <a href=\"#\">эффективнее</a> чем специалист"
+    effect              = "И, да, все верно -  справляюсь с этим <a href=\"/ru/advantages/\">эффективнее</a> чем специалист"
     scan                = "Давай посмотрим результаты сканирования Люмик.ру!"
 
 [[params.hero]]

@@ -8,8 +8,8 @@
         <ul>
             <li><a href="#">Nitra</a></li>
             <li><a href="#">Google Cloud</a></li>
-            <li><a href="#">Platform</a></li>
-            <li><a href="#">Program</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">Гарантии</a></li>
         </ul>
     </div>
 
@@ -37,20 +37,20 @@
             <div class="hero is-{{ .Site.Params.introHeight }}">
                 <div class="hero-body">
                     <div class="container">
-                        <div class="subtitle is-3">
+                        <div class="subtitle is-4">
                             {{ .Site.Params.welcome }}
                         </div>
                         <h1 class="bold-title has-text-centered {{ if .Site.Params.fadeIn }}fade-in one{{ end }}">
                             {{ .Site.Params.firstName }}
                         </h1>
-                        <h3 class="subtitle is-3 {{ if.Site.Params.fadeIn }} fade-in two{{ end }}">
+                        <h3 class="subtitle is-4 {{ if.Site.Params.fadeIn }} fade-in two{{ end }}">
                             {{ .Site.Params.tagLine }}
                         </h3>
                         <div class="hero-description">
                             <div>{{ with .Site.Params.optimization }}{{ .}}{{ end }}</div>
                             <div>{{ with .Site.Params.mission }}{{ .}}{{ end }}</div>
                             <div>{{ with .Site.Params.effect }}{{ . | safeHTML }}{{ end }}</div>
-                            <div class="watch-result title has-text-centered">{{ with .Site.Params.scan }}{{ .}}{{ end }}</div>
+                            <div class="watch-result title is-4 has-text-centered">{{ with .Site.Params.scan }}{{ .}}{{ end }}</div>
                             <div class="container has-text-centered"><a href="#scanner"><i class="fa fa-arrow-down"></i></a></div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                 <li>Оптимизация Люмик.ру</li>
             </ul> -->
                 <div class="row">
-                    <div class="col-12 scanner__item download">
+                    <div class="scanner__item download">
                         <div class="col-6 item__content">
                             <a href="#" class="content__title">Скорость загрузки Люмик.ру</a>
                             <p>Упс... клиенты уходят с сайта, если скорость загрузки сайта ниже 3 сек. Ты теряешь <br> 50% мобильного трафика. <a href="#" class="link-more">Подробнее</a></p>
@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 scanner__item download">
+                    <div class="scanner__item download">
                         <div class="col-6 item__content">
                             <a href="#" class="content__title">Защита данных</a>
                             <p>ой-ой-ой - результат негативный :( . Часть лояльных клиентов люмик.ру мигрируют к конкурентам. Пользователи прислушиваются к рекомендациям браузера и стараются не заходить на сайты, которые не защищают персональные данные.
@@ -127,7 +127,7 @@
         <div class="section forecast" id="forecast">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 scanner__item download">
+                    <div class=" scanner__item download">
                         <div class="col-6 item__content">
                             <a href="#" class="content__title">Защита данных </a>
                             <p>Люмик ру сможет гарантировать эффективную защиту персональных данных клиентов, в том числе данные плтаежных карт за счет интеграции HTTPS, HSTS, PFS <a href="#" class="link-more">Подробнее</a></p>
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 scanner__item download">
+                    <div class="scanner__item download">
                         <div class="col-6 item__content">
                             <a href="#" class="content__title">Скорость загрузки Люмик.ру</a>
                             <p>Юхууу! <a href="" id="">скорость загрузки страниц сайта</a> обрадует твоих клиентов и приведет к увеличению посетителей сайта. </p>
@@ -176,10 +176,70 @@
                     </div>
                 </div>
                 <div class="button-wrap">
-                    <a href="/ru/connection/" class="btn btn-light">Подключаем</a>
+                    <a href="/ru/connection/" class="btn btn-primary">Подключаем</a>
                 </div>
             </div>
         </div>
+
+        <section class="connection__info">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 connection__info__text">
+                <p>Хочешь получить дополнительную консультацию перед подключением?</p>
+                <p>Не вопрос. Мои создатели рады пообщаться с тобой. Те еще гики, хочу тебе сказать.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <form class="needs-validation" novalidate>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <div class="form__text">Заполни, пожалуйста, контактные данные.</div>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Обратный звонок" aria-describedby="validationTooltipUsernamePrepend" required>
+                        <div class="invalid-tooltip">
+                          Please choose a unique and valid username.
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Facebook" aria-describedby="validationTooltipUsernamePrepend" required>
+                        <div class="invalid-tooltip">
+                          Please choose a unique and valid username.
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fa fa-google" aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Google" aria-describedby="validationTooltipUsernamePrepend" required>
+                        <div class="invalid-tooltip">
+                          Please choose a unique and valid username.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+            <div class="row brands">
+              <div class="col-12">
+                <p class="title is-4">Бренды с которыми уже плодотворно сотрудничаю</p>
+                <div>
+                  <a href="#">АВК</a>, 
+                  <a href="#">SunInBev</a>, 
+                  <a href="#">АВК</a>, 
+                  <a href="#">SunInBev</a> </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
         {{ if .Site.Params.localTime }}
@@ -194,14 +254,7 @@
                 $('#time').html(time);
             })
         </script>
-        {{ end }} {{ if .Site.Params.email }}
-        <h3 class="subtitle is-3 has-text-centered top-pad"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></h3>
-        {{ end }}
-
-
-
-
-        <div class="container has-text-centered top-pad"><a href="#top"><i class="fa fa-arrow-up"></i></a></div>
+        {{ end }} 
 
         <!-- End Contact section -->
         {{ partial "footer.html" . }}

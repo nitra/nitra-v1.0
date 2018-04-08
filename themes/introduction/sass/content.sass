@@ -1,3 +1,5 @@
+@import "./component/aside-menu"
+
 .section
   padding: 0
 
@@ -31,8 +33,10 @@
       display: none
 
 .help
-  padding-left: 10%
+  padding-left: 0%
   margin-bottom: 0%
+  text-align: center
+  padding-top: 2rem
 
 .breadcrumbs li:before
   content: ""
@@ -65,17 +69,14 @@
   text-transform: uppercase
 
 .section.scanner
-  padding-top: 5rem
-  margin-bottom: 5rem
+  padding-top: 0rem
+  margin-bottom: 2rem
 
 .scanner__item
   display: flex
   margin-bottom: 3%
-  > div
-    width: 50%
+  width: 100%
 
-.item__content
-  padding-right: 5%
 
 .content__title
   font-size: 25px
@@ -174,4 +175,32 @@
   margin-bottom: 3rem
 
 .step-one__text
-  padding-top: 1rem    
+  padding-top: 1rem
+
+
+.connection__info
+  .input-group
+    margin-bottom: 1rem
+  .input-group-text
+    min-width: 45px
+    text-align: center
+    display: block
+
+.connection__info__text
+  margin-bottom: 2rem
+
+.form__text
+  margin-bottom: 1rem  
+
+.brands
+  padding: 2rem 0
+  text-align: center
+
+
+//============= Footer ===========================//
+#footer
+  padding: 3rem 0
+.footer__content
+  text-align: ceter  
+.social-icons
+  margin-bottom: 1rem      
