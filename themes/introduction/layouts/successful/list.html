@@ -1,0 +1,64 @@
+{{ partial "header.html" . }}
+
+<body class="speed-page">
+    
+    {{ partial "nav-list.html" . }}
+
+    <div id="content" class="">
+        <div class="container  hero pb-4rem">
+            <!-- Begin Title -->
+            <h1 class="title is-3">{{ .Title }}</h1>
+        </div>
+        <!-- End Title -->
+        <!-- Everything below fades in two! -->
+        <div class="section successful">
+            <div class="container markdown sigle__page__content">
+                {{ .Content }}
+                <div class="row">
+                    <div class="col-12 col-md-6 successful__title">
+                        <h3 class="title is-4">Выбери один из трех <br> способов подключения Nitra.ai</h3>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">One</button>
+                          <button type="button" class="btn btn-secondary">Two</button>
+                          <button type="button" class="btn btn-secondary">Three</button>
+                        </div>
+                        <div style="margin-bottom: 1rem">Подготовка настройки сайта:</div>
+                        <div>1. В контрольной панели "Джино" перейдите в раздел "Домены/Управление"</div>
+                        <div>2. Нажмите на "Управление DNS" справа от домена, для которого необходимо добавить запись.</div>
+                    </div>
+                    <div class="col-12 col-md-6 successful__title">
+                        <h3 class="title is-4">У тебя есть команда IT <br> менеджеров/разработчик сайта?</h3>
+                        <p>Вышли им ссылку для помощи в настройке <a href="{{ .Permalink }}">Nitra.ai</a></p>
+                        <button type="button" class="btn btn-primary">Копировать</button>
+                    </div>
+                </div>
+                <div class="row connection__completed">
+                    <div class="col-12">
+                        <p class="title is-4 text-center">Ехууу! подключение выполнено! </p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="http://via.placeholder.com/350x150" alt="">
+                    </div>
+                    <div class="col-12 text-center">
+                        <p>Первый отчет с  результаты оптимизации я отправлю через 72 часа. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            {{ partial "footer.html" . }}
+    </div>
+    <!-- End fade in two -->
+
+    <!-- Bitty scrolling links script -->
+    <script>
+    $('a[href^="{{ .Permalink }}#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash;
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 500);
+        return false;
+    })
+    </script>
+</body>

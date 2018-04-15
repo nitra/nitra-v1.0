@@ -147,11 +147,21 @@
 .glo-icon { text-align: center; padding-top: 1rem; padding-bottom: 1rem; }
 .glo-icon .fa { font-size: 10px; display: inline-block; }
 
+.successful .row { padding-bottom: 3rem; }
+.successful .btn-group { padding: 1.5rem 0; }
+.successful .btn { min-width: 130px; border: 1px solid #5a6268; }
+
+.row.connection__completed { padding-bottom: 0; }
+
+.connection__completed > div { margin-bottom: 3rem; }
+
 #footer { padding: 3rem 0; }
 
 .footer__content { text-align: ceter; }
 
 .social-icons { margin-bottom: 1rem; }
+
+.mobile { display: none; }
 
 .mb-1rem { margin-bottom: 1rem; }
 
@@ -182,9 +192,11 @@
 @media only screen and (max-width: 992px) { /* */ }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) { /* */
-  .hero-body { padding: 0; padding-top: 3rem; }
-  .hero-foot { display: none; }
-  .hero-foot span { display: block; }
+  .hero-body { padding: 0; padding-top: 5rem; }
+  .hero-foot { text-align: left; }
+  .hero-foot a { display: none; }
+  .hero-foot a.mobile { display: block; position: relative; z-index: 100; padding: 10px; }
+  .hero-foot a.mobile:focus { outline: none; }
   #side-nav { transform: translateX(-340px); }
   .scanner__item { flex-wrap: wrap; }
   .result__time { padding-left: 10px; padding-bottom: 10px; }
@@ -196,7 +208,8 @@
   .scanner__item { margin-bottom: 3rem; }
   .scanner__item__result { padding-top: 10px; }
   .forecast { padding-top: 0; }
-  .sigle__page__content { width: 100%; } }
+  .sigle__page__content { width: 100%; }
+  .ninja-btn { right: 1rem; top: 1rem; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) { /* */
   .step-one__text { padding-top: 0; margin-bottom: 1rem; }
@@ -206,10 +219,18 @@
   .connection__card .card__price { font-size: 2rem; }
   .connection__info { padding-top: 3rem; }
   .brands { padding-top: 2rem; padding-bottom: 2rem; }
-  #footer { padding: 2rem 0; padding-top: 1rem; } }
+  #footer { padding: 2rem 0; padding-top: 1rem; }
+  .or { padding: 2rem 0; }
+  .cloud-icon { padding-bottom: 2rem; }
+  .cloud-icon li { margin: 0 1.5rem; }
+  .cloud-icon li .fa { font-size: 2rem; }
+  .successful__title div { margin-bottom: 1rem; }
+  .successful .btn { min-width: 60%; }
+  .connection__completed > div { margin-bottom: 1rem; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) { /* */
-  #side-nav { width: 250px; } }
+  #side-nav { width: 250px; }
+  .successful .btn { min-width: 50%; } }
 /*==========  Mobile First  ========== */
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) { /* */ }

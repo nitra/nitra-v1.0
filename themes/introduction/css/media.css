@@ -12,14 +12,23 @@
   /* */
   .hero-body {
     padding: 0;
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
 
   .hero-foot {
+    text-align: left;
+  }
+  .hero-foot a {
     display: none;
   }
-  .hero-foot span {
+  .hero-foot a.mobile {
     display: block;
+    position: relative;
+    z-index: 100;
+    padding: 10px;
+  }
+  .hero-foot a.mobile:focus {
+    outline: none;
   }
 
   #side-nav {
@@ -75,6 +84,11 @@
   .sigle__page__content {
     width: 100%;
   }
+
+  .ninja-btn {
+    right: 1rem;
+    top: 1rem;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -115,12 +129,42 @@
     padding: 2rem 0;
     padding-top: 1rem;
   }
+
+  .or {
+    padding: 2rem 0;
+  }
+
+  .cloud-icon {
+    padding-bottom: 2rem;
+  }
+  .cloud-icon li {
+    margin: 0 1.5rem;
+  }
+  .cloud-icon li .fa {
+    font-size: 2rem;
+  }
+
+  .successful__title div {
+    margin-bottom: 1rem;
+  }
+
+  .successful .btn {
+    min-width: 60%;
+  }
+
+  .connection__completed > div {
+    margin-bottom: 1rem;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   /* */
   #side-nav {
     width: 250px;
+  }
+
+  .successful .btn {
+    min-width: 50%;
   }
 }
 /*==========  Mobile First  ========== */

@@ -18,8 +18,8 @@ date: 2017-03-09T13:19:25+08:00
 Как ты понимаешь, лишь малая часть пользователей рискнет перейти на твой сайт после такого грозного  предупреждения.
 
 <div class="row data-protect first">
-	<div class="col-2">сейчас</div>
-<div class="col-6">
+	<div class="col-12 col-md-6">сейчас</div>
+<div class="col-12 col-md-6">
 <form>
 <div class="input-group mb-3">
 <div class="input-group-prepend">
@@ -33,8 +33,8 @@ date: 2017-03-09T13:19:25+08:00
 </div> 
 
 <div class="row data-protect second">
-	<div class="col-2">с июля</div>
-<div class="col-6">
+	<div class="col-12 col-md-6">с июля</div>
+<div class="col-12 col-md-6">
 <form>
 <div class="input-group mb-3">
 <div class="input-group-prepend">

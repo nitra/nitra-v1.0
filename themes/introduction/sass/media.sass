@@ -17,11 +17,18 @@
 	/**/
 	.hero-body
 		padding: 0
-		padding-top: 3rem
+		padding-top: 5rem
 	.hero-foot
-		display: none
-		span
+		text-align: left
+		a
+			display: none
+		a.mobile
 			display: block
+			position: relative
+			z-index: 100
+			padding: 10px
+			&:focus
+				outline: none
 	#side-nav
 		transform: translateX(-340px)
 	.scanner__item
@@ -51,10 +58,11 @@
 	.forecast
 		padding-top: 0
 	.sigle__page__content
-		width: 100%							
+		width: 100%
+	.ninja-btn
+		right: 1rem
+		top: 1rem								
 				
-
-
 
 
 /* Extra Small Devices, Phones */
@@ -80,14 +88,31 @@
 		padding-bottom: 2rem
 	#footer
 		padding: 2rem 0
-		padding-top: 1rem				
+		padding-top: 1rem
+	.or
+		padding: 2rem 0	
+	.cloud-icon
+		padding-bottom: 2rem
+		li
+			margin: 0 1.5rem
+			.fa
+				font-size: 2rem
+	.successful__title
+		div
+			margin-bottom: 1rem
+	.successful .btn
+		min-width: 60%
+	.connection__completed > div
+		margin-bottom: 1rem											
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
 	#side-nav
-		width: 250px		
+		width: 250px
+	.successful .btn
+		min-width: 50%			
 
 
 /*==========  Mobile First  ==========*/
