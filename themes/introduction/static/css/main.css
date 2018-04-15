@@ -1,11 +1,11 @@
-#side-nav { width: 280px; text-align: center; background-color: white; position: fixed; top: 0; right: 0; height: 100%; z-index: 100; padding: 1rem; padding-top: 3rem; transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1); transform: translateX(285px); }
+#side-nav { width: 280px; text-align: center; background-color: white; position: fixed; top: 0; left: 0; height: 100%; z-index: 100; padding: 1rem; padding-top: 3rem; transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1); transform: translateX(-300px); box-shadow: 10px 0 50px 0px rgba(0, 0, 0, 0.3); }
 #side-nav.active { transform: translateX(0px); }
 #side-nav ul { text-align: left; padding-top: 2rem; padding-left: 2rem; }
 
 #content { position: relative; min-height: 100vh; }
 #content.active:before { content: ""; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 99; background-color: rgba(0, 0, 0, 0.4); }
 
-.ninja-btn { display: inline-block; float: left; position: relative; width: 44px; height: 28.66667px; cursor: pointer; padding: 0; z-index: 100; position: fixed; right: 2rem; top: 2rem; }
+.ninja-btn { display: inline-block; float: left; position: relative; width: 44px; height: 28.66667px; cursor: pointer; padding: 0; z-index: 1000; position: fixed; right: 2rem; top: 2rem; }
 .ninja-btn span { -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; background-color: black; width: 44px; height: 4px; position: relative; display: inline-block; float: left; margin-top: 13.33333px; }
 .ninja-btn span:before, .ninja-btn span:after { -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; background-color: black; width: 44px; height: 4px; }
 .ninja-btn span:before, .ninja-btn span:after { content: ""; position: absolute; left: 0; }
@@ -28,9 +28,9 @@
 
 .hero { width: 100%; display: flex; align-items: center; justify-content: center; }
 
-.hero-body { padding-top: 0; }
+.hero-body { padding-top: 8%; }
 
-.hero-foot { position: absolute; width: 100%; z-index: 2; }
+.hero-foot { position: absolute; width: 100%; z-index: 2; text-align: right; }
 
 .watch-result { margin-top: 3rem; }
 
@@ -42,7 +42,8 @@
 
 .breadcrumbs li:before { content: ""; display: block; width: 8px; height: 8px; border-radius: 50%; background-color: black; position: absolute; left: -17px; top: 50%; margin-top: -5px; }
 
-.hero-foot__link { padding: 30px; display: block; padding-bottom: 0; text-align: right; padding-right: 10%; width: 100%; display: inline-block; }
+.hero-foot__link { margin-top: 30px; display: block; padding-bottom: 0; text-align: right; padding-right: 10%; display: inline-block; }
+.hero-foot__link:focus, .hero-foot__link:active { outline: none; }
 
 .hero-description div { margin-bottom: 1rem; }
 .hero-description a { text-decoration: underline; }
@@ -53,7 +54,7 @@
 
 .scanner__item { display: flex; margin-bottom: 3%; width: 100%; }
 
-.content__title { font-size: 25px; margin-bottom: 10px; display: inline-block; }
+.content__title { margin-bottom: 0px; display: inline-block; color: #00b8d4; }
 
 .scanner__item__result { display: flex; align-items: center; position: relative; padding-top: 30px; }
 
@@ -72,11 +73,13 @@
 
 .button-wrap { text-align: center; }
 
-.forecast { padding-top: 5rem; padding-bottom: 5rem; }
+.forecast { padding-top: 2rem; padding-bottom: 0rem; }
+
+.connection { padding-top: 3rem; }
 
 .connection__content .required { font-size: 12px; color: red; }
 
-.connection__card__wrap { display: flex; justify-content: center; }
+.connection__card__wrap { display: flex; justify-content: center; padding-top: 2rem; }
 
 .connection__card a { display: block; text-align: center; }
 .connection__card .card-body { border: 1px solid #dddddd; padding-top: 10rem; text-align: center; background-color: white; transition: all 0.3s ease; }
@@ -89,6 +92,7 @@
 
 .step-one__text { padding-top: 1rem; }
 
+.connection__info { padding-top: 5rem; text-align: center; }
 .connection__info .input-group { margin-bottom: 1rem; }
 .connection__info .input-group-text { min-width: 45px; text-align: center; display: block; }
 
@@ -96,7 +100,7 @@
 
 .form__text { margin-bottom: 1rem; }
 
-.brands { padding: 2rem 0; text-align: center; }
+.brands { padding: 3rem 0; padding-top: 5rem; text-align: center; }
 
 #footer { padding: 3rem 0; }
 
@@ -105,6 +109,8 @@
 .social-icons { margin-bottom: 1rem; }
 
 .mb-1rem { margin-bottom: 1rem; }
+
+.title.is-4 { margin-bottom: 1rem; }
 
 .single-page .section { padding-top: 4rem; }
 
