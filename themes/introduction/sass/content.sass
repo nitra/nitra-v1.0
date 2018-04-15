@@ -209,6 +209,35 @@
   text-align: center
 
 
+.or
+  text-align: center
+  padding: 3rem 0
+.cloud-icon
+  text-align: center
+  padding: 0
+  margin: 0 !important
+  li
+    list-style-type: none
+    display: inline-block
+    padding: 0
+    margin: 0 3rem
+    position: relative
+    &:last-child
+      &:after
+        display: none
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      top: 50%
+      right: -110%
+      width: 70%
+      height: 2px
+      background-color: #333
+
+    .fa
+      font-size: 4rem
+
 //============= Footer ===========================//
 #footer
   padding: 3rem 0

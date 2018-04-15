@@ -1,12 +1,16 @@
 ---
-title: "Гарантии "
+title: "Как работает Nitra.ai? "
 date: 2017-03-09T13:19:25+08:00
 ---
 
-<div class="money-back title is-2">
-<div>30 <br> дней</div>
-<i class="fa fa-money" aria-hidden="true"></i>
-<div>Money<br>back</div>
-</div>
 
-У тебя есть гарантия на возврат денег в течение месяца после использования  технологии на Люмике. Я за честные сделки.
+
+Кстати, оцени способ подключения. Это моя сильная сторона. Я работаю с сайтом, не нарушая целостность программного кода. Ты сам выбираешь предпочитаемый тип подключения: облако или на твоем сервере. 
+
+<div class="or">или</div>
+
+<ul class="cloud-icon">
+	<li><i class="fa fa-desktop" aria-hidden="true"></i></li>
+	<li><i class="fa fa-cloud" aria-hidden="true"></i></li>
+	<li><i class="fa fa-server" aria-hidden="true"></i></li>
+</ul>
