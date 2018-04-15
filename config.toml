@@ -10,6 +10,49 @@ canonifyurls        = true                              # Turns relative urls in
 defaultContentLanguage = "ru"
 defaultContentLanguageInSubdir = true
 
+[menu]
+    [[menu.main]]
+        name = "Главная"
+        identifier = "home"
+        url = "/"
+        weight = 10
+    [[menu.main]]
+        name = "Как работает Nitra.ai"
+        identifier = "howWork"
+        url = "/ru/how-it-work/"
+        weight = 11
+    [[menu.main]]
+        name = "Подключение"
+        identifier = "connection"
+        url = "ru/connection/"
+        weight = 12
+    [[menu.main]]
+        name = "Защита данных"
+        identifier = "data-protect"
+        url = "ru/data-protect/"
+        weight = 13
+    [[menu.main]]
+        name = "Преимущества"
+        identifier = "connection"
+        url = "ru/advantages/"
+        weight = 14
+    [[menu.main]]
+        name = "Алгоритмы оптимизации"
+        identifier = "algorithm"
+        url = "ru/speed-optimization-algorithms/"
+        weight = 15
+    [[menu.main]]
+        name = "Облачная интеграция"
+        identifier = "cloud-server"
+        url = "ru/cloud-server/"
+        weight = 16
+    [[menu.main]]
+        name = "Раздел аббревиатур"
+        identifier = "glossary"
+        url = "ru/glossary/"
+        weight = 17
+
+
 # enableMissingTranslationPlaceholders = true 
 [params] 
     themestyle          = "light"                        # Choose 'light' or 'dark'
@@ -59,8 +102,10 @@ defaultContentLanguageInSubdir = true
 #    url = "https://linkedin.com/"
 #    icon = "linkedin"
 
+
 [languages]
 [languages.ru]
+    logo = "img/logo.svg"
     welcome = "Привет, я"
     bloghead            = "Blog"
     firstname           = "Nitra"

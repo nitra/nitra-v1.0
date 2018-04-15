@@ -1,6 +1,12 @@
-#side-nav { width: 280px; text-align: center; background-color: white; position: fixed; top: 0; left: 0; height: 100%; z-index: 100; padding: 1rem; padding-top: 3rem; transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1); transform: translateX(-300px); box-shadow: 10px 0 50px 0px rgba(0, 0, 0, 0.3); }
+#side-nav { width: 280px; text-align: center; background-color: white; position: fixed; top: 0; left: 0; height: 100%; z-index: 100; padding-top: 2rem; transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1); transform: translateX(-300px); box-shadow: 10px 0 50px 0px rgba(0, 0, 0, 0.3); }
 #side-nav.active { transform: translateX(0px); }
-#side-nav ul { text-align: left; padding-top: 2rem; padding-left: 2rem; }
+#side-nav ul { text-align: left; padding-top: 2rem; }
+#side-nav ul li { display: inline-block; width: 100%; }
+#side-nav ul li a { display: block; width: 100%; padding: 0.5rem 1rem; padding-left: 2rem; transition: all 0.3s ease; }
+#side-nav ul li a:hover { text-decoration: none; background-color: #dddddd; }
+
+.logo { display: block; }
+.logo img { box-shadow: none; border: none; border-radius: 0px; width: 80px; }
 
 #content { position: relative; min-height: 100vh; }
 #content.active:before { content: ""; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 99; background-color: rgba(0, 0, 0, 0.4); }
@@ -28,7 +34,7 @@
 
 .hero { width: 100%; display: flex; align-items: center; justify-content: center; }
 
-.hero-body { padding-top: 8%; }
+.hero-body { padding-top: 8%; width: 100%; }
 
 .hero-foot { position: absolute; width: 100%; z-index: 2; text-align: right; }
 
@@ -54,6 +60,8 @@
 
 .scanner__item { display: flex; margin-bottom: 3%; width: 100%; }
 
+.item__content { padding-right: 5rem; }
+
 .content__title { margin-bottom: 0px; display: inline-block; color: #00b8d4; }
 
 .scanner__item__result { display: flex; align-items: center; position: relative; padding-top: 30px; }
@@ -74,8 +82,6 @@
 .button-wrap { text-align: center; }
 
 .forecast { padding-top: 2rem; padding-bottom: 0rem; }
-
-.connection { padding-top: 3rem; }
 
 .connection__content .required { font-size: 12px; color: red; }
 
@@ -110,6 +116,37 @@
 .cloud-icon li:after { content: ""; display: block; position: absolute; top: 50%; right: -110%; width: 70%; height: 2px; background-color: #333333; }
 .cloud-icon li .fa { font-size: 4rem; }
 
+.speed-test .row { margin-bottom: 2rem; align-items: center; }
+
+.speed-test__number { padding: 0; max-width: 90px; }
+.speed-test__number span.sec { font-size: 16px; font-weight: normal; }
+
+.speed-test__number { font-weight: bold; font-size: 2rem; }
+
+.speed-scann-namber { margin-top: auto; font-size: 1.5rem; padding-bottom: 20px; }
+
+.speed .result__indicators { margin-left: 0; border: none; }
+.speed .result__chart { border: none; }
+.speed .row { margin-bottom: 1.5rem; }
+
+.result__chart--time { background-image: none; color: #333333; border: none; box-shadow: inset 0px 0px 0px 1px #222222; text-shadow: none; }
+
+.algorithm .title { padding-bottom: 2rem; }
+.algorithm p { margin-bottom: 1rem; }
+
+.compare { width: 100%; margin-bottom: 3rem; padding-top: 2rem; }
+.compare img { display: inline-block; border: none; border-radius: 0; max-width: 300px; }
+.compare .col-6 { text-align: center; }
+
+.speed-page .hero { padding-top: 3rem; }
+
+.data-protect.first { padding-top: 2rem; }
+
+.data-protect.second { padding-bottom: 2rem; }
+
+.glo-icon { text-align: center; padding-top: 1rem; padding-bottom: 1rem; }
+.glo-icon .fa { font-size: 10px; display: inline-block; }
+
 #footer { padding: 3rem 0; }
 
 .footer__content { text-align: ceter; }
@@ -118,6 +155,10 @@
 
 .mb-1rem { margin-bottom: 1rem; }
 
+.pb-2rem { padding-bottom: 2rem; }
+
+.pb-4rem { padding-bottom: 4rem; }
+
 .title.is-4 { margin-bottom: 1rem; }
 
 .single-page .section { padding-top: 4rem; }
@@ -125,10 +166,58 @@
 #payments.section { padding-top: 4rem; }
 #payments.section .custom-checkbox { line-height: 18px; margin-bottom: 1rem; }
 
-.sigle__page__content { width: 60%; margin: 0 auto; }
+.sigle__page__content { width: 70%; margin: 0 auto; }
+.sigle__page__content .section { padding-top: 4rem; }
 
 .page-icon { text-align: center; padding-top: 2rem; padding-bottom: 1rem; }
 .page-icon .fa { font-size: 3rem; }
 
 .money-back { padding: 2rem 0; display: flex; justify-content: center; align-items: center; text-align: center; line-height: 35px; }
 .money-back .fa { font-size: 3rem; display: inline-block; margin: 0 3rem; }
+
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) { /* */ }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) { /* */ }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) { /* */
+  .hero-body { padding: 0; padding-top: 3rem; }
+  .hero-foot { display: none; }
+  .hero-foot span { display: block; }
+  #side-nav { transform: translateX(-340px); }
+  .scanner__item { flex-wrap: wrap; }
+  .result__time { padding-left: 10px; padding-bottom: 10px; }
+  .result__indicators { margin-left: 0; }
+  .result__time .time { font-size: 28px; }
+  .icon { width: 20px; margin-left: -40px; position: relative; bottom: -35px; left: -15px; }
+  .item__content { padding-right: 0; }
+  .icon { left: 70%; bottom: 5%; }
+  .scanner__item { margin-bottom: 3rem; }
+  .scanner__item__result { padding-top: 10px; }
+  .forecast { padding-top: 0; }
+  .sigle__page__content { width: 100%; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) { /* */
+  .step-one__text { padding-top: 0; margin-bottom: 1rem; }
+  .step { margin-bottom: 1px; }
+  .connection__card { padding: 0; margin: 2px; }
+  .connection__card .card-body { padding-top: 7rem; margin-bottom: 1rem; }
+  .connection__card .card__price { font-size: 2rem; }
+  .connection__info { padding-top: 3rem; }
+  .brands { padding-top: 2rem; padding-bottom: 2rem; }
+  #footer { padding: 2rem 0; padding-top: 1rem; } }
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) { /* */
+  #side-nav { width: 250px; } }
+/*==========  Mobile First  ========== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) { /* */ }
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) { /* */ }
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) { /* */ }
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) { /* */ }
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) { /* */ }

@@ -1,17 +1,8 @@
 {{ partial "header.html" . }}
 
 <body>
-    <a class="ninja-btn" title="menu"><span></span></a>
-    <!-- Side Nav -->
-    <div id="side-nav">
-        <h1>Menu</h1>
-        <ul>
-            <li><a href="#">Nitra</a></li>
-            <li><a href="#">Google Cloud</a></li>
-            <li><a href="#">Преимущества</a></li>
-            <li><a href="#">Гарантии</a></li>
-        </ul>
-    </div>
+
+    {{ partial "nav-list.html" . }}
 
     <div id="content" class="">
 
@@ -21,17 +12,7 @@
 
         <div class="section">
             <div class="hero-foot {{ if .Site.Params.fadeIn }}fade-in three{{ end }}">
-                <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="hero-foot__link">Nitra участник Google Cloud Platform Startup Program</a>
-                <!-- <nav class="nav-center">
-                <a class="nav-item" href="#about">Что можно улучшить</a>
-                {{ if .Site.Params.showProjects }}
-                <a class="nav-item" href="#projects">Зачем</a>
-                {{ end }}
-                {{ if .Site.Params.showBlog }}
-                <a class="nav-item" href="#blog">Технологии</a>
-                {{ end }}
-                <a class="nav-item" href="#contact">Контакты</a>
-            </nav> -->
+                <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="hero-foot__link">Nitra участник <span class="mobile">Google</span> Cloud Platform <span class="mobile">Startup</span> Program</a>
             </div>
             <!-- Done with nav bar -->
             <div class="hero is-{{ .Site.Params.introHeight }}">
@@ -43,7 +24,7 @@
                         <h1 class="bold-title has-text-centered {{ if .Site.Params.fadeIn }}fade-in one{{ end }}">
                             {{ .Site.Params.firstName }}
                         </h1>
-                        <h3 class="subtitle is-4 {{ if.Site.Params.fadeIn }} fade-in two{{ end }}">
+                        <h3 class="pb-2rem subtitle is-4 {{ if.Site.Params.fadeIn }} fade-in two{{ end }}">
                             {{ .Site.Params.tagLine }}
                         </h3>
                         <div class="hero-description">
@@ -60,25 +41,20 @@
 
             </div>
             <!-- Done with Hero -->
+            <div class="hero-foot mobile {{ if .Site.Params.fadeIn }}fade-in three{{ end }}">
+                <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="hero-foot__link">Nitra участник <span class="mobile">Google</span> Cloud Platform <span class="mobile">Startup</span> Program</a>
+            </div>
         </div>
-
-        <!-- Everything below fades in three! -->
-        <!-- <div class="section no-padding {{ if .Site.Params.fadeIn }}fade-in three{{ end }}"> -->
 
         <div class="section scanner" id="scanner">
             <div class="container">
-                <!-- <ul class="breadcrumbs">
-                <li>Nitra.ai</li>
-                <li>Сканер</li>
-                <li>Оптимизация Люмик.ру</li>
-            </ul> -->
                 <div class="row">
                     <div class="scanner__item download">
-                        <div class="col-6 item__content">
-                            <a href="#" class="content__title title is-4">Скорость загрузки Люмик.ру</a>
-                            <p>Упс... клиенты уходят с сайта, если скорость загрузки сайта ниже 3 сек. Ты теряешь <br> 50% мобильного трафика. <a href="#" class="link-more">Подробнее</a></p>
+                        <div class="col-12 col-md-6 item__content">
+                            <a href="/ru/speed/" class="content__title title is-4">Скорость загрузки Люмик.ру</a>
+                            <p>Упс... клиенты уходят с сайта, если скорость загрузки сайта ниже 3 сек. Ты теряешь <br> 50% мобильного трафика. <a href="/ru/speed/" class="link-more">Подробнее</a></p>
                         </div>
-                        <div class="col-6 scanner__item__result">
+                        <div class="col-12 col-md-6 scanner__item__result">
                             <div class="result__indicators">
                                 <div class="result__time">
                                     <span class="time">26</span>
@@ -97,12 +73,12 @@
                 </div>
                 <div class="row">
                     <div class="scanner__item download">
-                        <div class="col-6 item__content">
-                            <a href="#" class="content__title title is-4">Защита данных</a>
+                        <div class="col-12 col-md-6 item__content">
+                            <a href="/ru/data-protect/" class="content__title title is-4">Защита данных</a>
                             <p>ой-ой-ой - результат негативный :( . Часть лояльных клиентов люмик.ру мигрируют к конкурентам. Пользователи прислушиваются к рекомендациям браузера и стараются не заходить на сайты, которые не защищают персональные данные.
-                                <a href="#" class="link-more">Подробнее</a></p>
+                                <a href="/ru/data-protect/" class="link-more">Подробнее</a></p>
                         </div>
-                        <div class="col-6 scanner__item__result">
+                        <div class="col-12 col-md-6 scanner__item__result">
                             <div class="result__indicators">
                                 <div class="result__time">
                                     <span style="opacity: 0" class="time">15</span>
@@ -128,11 +104,11 @@
             <div class="container">
                 <div class="row">
                     <div class=" scanner__item download">
-                        <div class="col-6 item__content">
-                            <a href="#" class="content__title title is-4">Защита данных </a>
-                            <p>Люмик ру сможет гарантировать эффективную защиту персональных данных клиентов, в том числе данные плтаежных карт за счет интеграции HTTPS, HSTS, PFS <a href="#" class="link-more">Подробнее</a></p>
+                        <div class="col-12 col-md-6 item__content">
+                            <a href="/ru/how-it-work/" class="content__title title is-4">Защита данных </a>
+                            <p>Люмик ру сможет гарантировать эффективную защиту персональных данных клиентов, в том числе данные плтаежных карт за счет интеграции HTTPS, HSTS, PFS <a href="/ru/how-it-work/" class="link-more">Подробнее</a></p>
                         </div>
-                        <div class="col-6 scanner__item__result">
+                        <div class="col-12 col-md-6 scanner__item__result">
                             <div class="result__indicators">
                                 <div class="result__time" style="padding-left: 5%">
                                     <span style="opacity: 0" class="time">15</span>
@@ -151,14 +127,14 @@
                 </div>
                 <div class="row">
                     <div class="scanner__item download">
-                        <div class="col-6 item__content">
-                            <a href="#" class="content__title title is-4">Скорость загрузки Люмик.ру</a>
+                        <div class="col-12 col-md-6 item__content">
+                            <a href="/ru/how-it-work/" class="content__title title is-4">Скорость загрузки Люмик.ру</a>
                             <p>Юхууу! <a href="" id="">скорость загрузки страниц сайта</a> обрадует твоих клиентов и приведет к увеличению посетителей сайта. </p>
                             <p>Google ранжирует сайты в поисковой выдаче в зависимости от скорости работы ресурса.</p>
                             <p>Окей, а мой плюс в том, что я не только даю оценку скорости работы сайта. </p>
                             <p>Я знаю как оптимизировать скорость работы Люмик.ру в режиме реального времени!</p>
                         </div>
-                        <div class="col-6 scanner__item__result">
+                        <div class="col-12 col-md-6 scanner__item__result">
                             <div class="result__indicators">
                                 <div class="result__time" style="padding-left: 10% ;">
                                     <span class="time">15</span>
@@ -195,8 +171,8 @@
                     <div class="connection__content">
                         <div class="row step step-one">
                             <div class="col-12 title is-4">Шаг 1</div>
-                            <div class="col-6 step-one__text">Для интеграции и настроек мне <br> необходимо подтверждение e-mail</div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6 step-one__text">Для интеграции и настроек мне <br> необходимо подтверждение e-mail</div>
+                            <div class="col-12 col-md-6">
                                 <form>
                                     <label class="required" for="basic-url">*Обязательное поле для заполнения</label>
                                     <div class="input-group mb-3">
@@ -212,15 +188,15 @@
                             <div class="col-12 title is-4">Шаг 2</div>
                             <div class="col-12">Выбери удобный для тебя формат подключения</div>
                             <div class="col-12 connection__card__wrap">
-                                <div class="col-4 connection__card">
+                                <div class="col-6 col-md-4 connection__card">
                                     <a href="/ru/cloud-server/" class="card__link subtitle is-4">Облачная интеграция</a>
                                     <a href="/ru/payments/" class="card-body">
                                         <p class="card-text">Ежемесячно</p>
                                         <h6 class="card-subtitle mb-2 text-muted card__price">20 $</h6>
                                     </a>
                                 </div>
-                                <div class=" col-4 connection__card">
-                                    <a href="#" class="card__link subtitle is-4">сервере Люмик.ру</a>
+                                <div class=" col-6 col-md-4 connection__card">
+                                    <a href="ru/cloud-server/" class="card__link subtitle is-4">сервере Люмик.ру</a>
                                     <a href="/ru/payments/" class="card-body">
                                         <p class="card-text">Единоразово</p>
                                         <h6 class="card-subtitle mb-2 text-muted card__price">200 $</h6>
