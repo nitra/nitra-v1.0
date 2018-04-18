@@ -1,3 +1,15 @@
+.container {
+  max-width: 1024px;
+}
+
+button.btn.btn-primary {
+  min-width: 260px;
+}
+
+.hero-not-scan .bold-title.has-text-centered {
+  padding-bottom: 4rem;
+}
+
 .mb-1rem {
   margin-bottom: 1rem;
 }
