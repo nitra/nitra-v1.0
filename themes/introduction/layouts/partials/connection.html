@@ -1,0 +1,110 @@
+
+<div id="connection" class="section connection {{ if .Site.Params.fadeIn }} fade-in two {{ end }}">
+  <div class="container markdown {{ if .Site.Params.fadeIn }} fade-in two {{ end }} top-pad">
+    <div class="connection__content">
+      <div class="row step step-one">
+          <div class="col-12 title is-4">Шаг 1</div>
+          <div class="col-12 col-md-6 step-one__text">Для интеграции и настроек мне <br> необходимо подтверждение e-mail</div>
+          <div class="col-12 col-md-6">
+              <form>
+                  <label class="required" for="basic-url">*Обязательное поле для заполнения</label>
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="lumik@gmail.ru" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+              </form>
+          </div>
+      </div>
+      <div class="row step step-two">
+          <div class="col-12 title is-4">Шаг 2</div>
+          <div class="col-12">Выбери удобный для тебя формат подключения</div>
+          <div class="col-12 connection__card__wrap">
+              <div class="col-6 col-md-4 connection__card">
+                  <a href="/ru/cloud-server/" class="card__link subtitle is-4">Облачная интеграция</a>
+                  <a href="/ru/payments/" class="card-body">
+                      <p class="card-text">Ежемесячно</p>
+                      <h6 class="card-subtitle mb-2 text-muted card__price">20 $</h6>
+                  </a>
+              </div>
+              <div class=" col-6 col-md-4 connection__card">
+                  <a href="ru/cloud-server/" class="card__link subtitle is-4">сервере Люмик.ру</a>
+                  <a href="/ru/payments/" class="card-body">
+                      <p class="card-text">Единоразово</p>
+                      <h6 class="card-subtitle mb-2 text-muted card__price">200 $</h6>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 has-text-centered">Тестируй мою технологию с пользой для сайта &nbsp; &nbsp; <a href="/ru/guarantees/">Детально о гарантиях</a></div>
+    </div>
+  </div>
+  <!-- End blog post content -->
+
+  <div class="disqus">
+      {{ template "_internal/disqus.html" . }}
+  </div>
+
+</div>
+<!-- End fade in two -->
+
+<section class="connection__info">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 connection__info__text">
+        <p>Хочешь получить дополнительную консультацию перед подключением?</p>
+        <p>Не вопрос. Мои создатели рады пообщаться с тобой. Те еще гики, хочу тебе сказать.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="col-12 col-md-4 offset-md-4">
+              <div class="form__text">Заполни, пожалуйста, контактные данные.</div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                </div>
+                <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Обратный звонок" aria-describedby="validationTooltipUsernamePrepend" required>
+                <div class="invalid-tooltip">
+                  Please choose a unique and valid username.
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                </div>
+                <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Facebook" aria-describedby="validationTooltipUsernamePrepend" required>
+                <div class="invalid-tooltip">
+                  Please choose a unique and valid username.
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fa fa-google" aria-hidden="true"></i></span>
+                </div>
+                <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Google" aria-describedby="validationTooltipUsernamePrepend" required>
+                <div class="invalid-tooltip">
+                  Please choose a unique and valid username.
+                </div>
+              </div>
+            <button class="btn btn-primary" type="submit">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row brands">
+      <div class="col-12">
+        <p class="title is-4">Бренды с которыми уже плодотворно сотрудничаю</p>
+        <div>
+          <a href="#">АВК</a>, 
+          <a href="#">SunInBev</a>, 
+          <a href="#">АВК</a>, 
+          <a href="#">SunInBev</a> </div>
+      </div>
+    </div>
+  </div>
+</section>

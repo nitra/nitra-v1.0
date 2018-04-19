@@ -2,271 +2,42 @@
 
 <body>
 
-    {{ partial "nav-list.html" . }}
+  {{ partial "nav-list.html" . }}
 
-    <div id="content" class="">
+  <div id="content" class="">
+    <div id="top"></div>
 
-        <!-- Добавлен закрывающий div top -->
-        <div id="top"></div>
-        <!-- Where all the awesome begins -->
+    <!-- Where all the awesome begins -->
+    {{ partial "hero.html" . }}
+    <!-- {{ partial "hero-not-scan.html" . }} -->
+    
+    {{ partial "scan.html" }}
 
-        {{ partial "hero.html" . }}
-        <!-- {{ partial "hero-not-scan.html" . }} -->
-        
+    {{ partial "forecast.html" }}
 
-        <div class="section scanner" id="scanner">
-            <div class="container">
-                <div class="row">
-                    <div class="scanner__item download">
-                        <div class="col-12 col-md-6 item__content">
-                            <a href="/ru/speed/" class="content__title title is-4">Скорость загрузки Люмик.ру</a>
-                            <p>Упс... клиенты уходят с сайта, если скорость загрузки сайта ниже 3 сек. Ты теряешь <br> 50% мобильного трафика. <a href="/ru/speed/" class="link-more">Подробнее</a></p>
-                        </div>
-                        <div class="col-12 col-md-6 scanner__item__result">
-                            <div class="result__indicators">
-                                <div class="result__time">
-                                    <span class="time">26</span>
-                                    <span>сек.</span>
-                                    <div class="icon"><img src="/img/two-down-chevron.svg" alt=""></div>
-                                </div>
-                                <div class="result__chart">
-                                    <span>best</span>
-                                    <span>better</span>
-                                    <span>good</span>
-                                    <span>poor...</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="scanner__item download">
-                        <div class="col-12 col-md-6 item__content">
-                            <a href="/ru/data-protect/" class="content__title title is-4">Защита данных</a>
-                            <p>ой-ой-ой - результат негативный :( . Часть лояльных клиентов люмик.ру мигрируют к конкурентам. Пользователи прислушиваются к рекомендациям браузера и стараются не заходить на сайты, которые не защищают персональные данные.
-                                <a href="/ru/data-protect/" class="link-more">Подробнее</a></p>
-                        </div>
-                        <div class="col-12 col-md-6 scanner__item__result">
-                            <div class="result__indicators">
-                                <div class="result__time">
-                                    <span style="opacity: 0" class="time">15</span>
-                                    <span style="opacity: 0">сек.</span>
-                                    <div class="icon"><img src="/img/two-down-chevron.svg" alt=""></div>
-                                </div>
-                                <div class="result__chart">
-                                    <span>best</span>
-                                    <span>better</span>
-                                    <span>good</span>
-                                    <span>poor...</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="help title is-4 has-text-centered">Как я могу оптимизировать работу Люмик.ру?</div>
-                <div class="container has-text-centered"><a href="#forecast"><i class="fa fa-arrow-down"></i></a></div>
-            </div>
-        </div>
-
-        <div class="section forecast" id="forecast">
-            <div class="container">
-                <div class="row">
-                    <div class=" scanner__item download">
-                        <div class="col-12 col-md-6 item__content">
-                            <a href="/ru/how-it-work/" class="content__title title is-4">Защита данных </a>
-                            <p>Люмик ру сможет гарантировать эффективную защиту персональных данных клиентов, в том числе данные плтаежных карт за счет интеграции HTTPS, HSTS, PFS <a href="/ru/how-it-work/" class="link-more">Подробнее</a></p>
-                        </div>
-                        <div class="col-12 col-md-6 scanner__item__result">
-                            <div class="result__indicators">
-                                <div class="result__time" style="padding-left: 5%">
-                                    <span style="opacity: 0" class="time">15</span>
-                                    <span style="opacity: 0">сек.</span>
-                                    <div class="icon"><img src="/img/two-down-chevron.svg" alt=""></div>
-                                </div>
-                                <div class="result__chart">
-                                    <span>best</span>
-                                    <span>better</span>
-                                    <span>good</span>
-                                    <span>poor...</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="scanner__item download">
-                        <div class="col-12 col-md-6 item__content">
-                            <a href="/ru/how-it-work/" class="content__title title is-4">Скорость загрузки Люмик.ру</a>
-                            <p>Юхууу! <a href="" id="">скорость загрузки страниц сайта</a> обрадует твоих клиентов и приведет к увеличению посетителей сайта. </p>
-                            <p>Google ранжирует сайты в поисковой выдаче в зависимости от скорости работы ресурса.</p>
-                            <p>Окей, а мой плюс в том, что я не только даю оценку скорости работы сайта. </p>
-                            <p>Я знаю как оптимизировать скорость работы Люмик.ру в режиме реального времени!</p>
-                        </div>
-                        <div class="col-12 col-md-6 scanner__item__result">
-                            <div class="result__indicators">
-                                <div class="result__time" style="padding-left: 10% ;">
-                                    <span class="time">15</span>
-                                    <span>сек.</span>
-                                    <div class="icon"><img src="/img/two-down-chevron.svg" alt=""></div>
-                                </div>
-                                <div class="result__chart">
-                                    <span>best</span>
-                                    <span>better</span>
-                                    <span>good</span>
-                                    <span>poor...</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="button-wrap">
-                    <a href="#connection" class="btn btn-primary">Подключаем</a>
-                </div>
-            </div>
-        </div>
+    {{ partial "connection.html" }}
 
 
-            <!-- Everything below fades in two! -->
-            <div id="connection" class="section connection {{ if .Site.Params.fadeIn }} fade-in two {{ end }}">
+    {{ if .Site.Params.localTime }}
+    <p>My current local time is <span id="time"></span>.</p>
+    <script type="text/javascript" src="/js/moment.js"></script>
+    <script type="text/javascript" src="/js/moment-timezone.js"></script>
+    <script type="text/javascript" src="/js/moment-timezone-with-data-2012-2022.js"></script>
 
-                <div class="container">
+    <script>
+        $(document).ready(function() {
+            var time = moment().tz("{{ .Site.Params.timeZone }}").format("h:mm A");
+            $('#time').html(time);
+        })
+    </script>
+    {{ end }} 
+    <!-- End Contact section -->
+    {{ partial "footer.html" . }}
 
-                </div>
-                <!-- End Nav bar -->
+  </div>
+  <!-- st-container -->
 
-                <div class="container markdown {{ if .Site.Params.fadeIn }} fade-in two {{ end }} top-pad">
-
-                    <div class="connection__content">
-                        <div class="row step step-one">
-                            <div class="col-12 title is-4">Шаг 1</div>
-                            <div class="col-12 col-md-6 step-one__text">Для интеграции и настроек мне <br> необходимо подтверждение e-mail</div>
-                            <div class="col-12 col-md-6">
-                                <form>
-                                    <label class="required" for="basic-url">*Обязательное поле для заполнения</label>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon1">@</span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="lumik@gmail.ru" aria-label="Username" aria-describedby="basic-addon1">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row step step-two">
-                            <div class="col-12 title is-4">Шаг 2</div>
-                            <div class="col-12">Выбери удобный для тебя формат подключения</div>
-                            <div class="col-12 connection__card__wrap">
-                                <div class="col-6 col-md-4 connection__card">
-                                    <a href="/ru/cloud-server/" class="card__link subtitle is-4">Облачная интеграция</a>
-                                    <a href="/ru/payments/" class="card-body">
-                                        <p class="card-text">Ежемесячно</p>
-                                        <h6 class="card-subtitle mb-2 text-muted card__price">20 $</h6>
-                                    </a>
-                                </div>
-                                <div class=" col-6 col-md-4 connection__card">
-                                    <a href="ru/cloud-server/" class="card__link subtitle is-4">сервере Люмик.ру</a>
-                                    <a href="/ru/payments/" class="card-body">
-                                        <p class="card-text">Единоразово</p>
-                                        <h6 class="card-subtitle mb-2 text-muted card__price">200 $</h6>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 has-text-centered">Тестируй мою технологию с пользой для сайта &nbsp; &nbsp; <a href="/ru/guarantees/">Детально о гарантиях</a></div>
-                    </div>
-                </div>
-                <!-- End blog post content -->
-
-                <div class="disqus">
-                    {{ template "_internal/disqus.html" . }}
-                </div>
-
-            </div>
-            <!-- End fade in two -->
-
-        <section class="connection__info">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 connection__info__text">
-                <p>Хочешь получить дополнительную консультацию перед подключением?</p>
-                <p>Не вопрос. Мои создатели рады пообщаться с тобой. Те еще гики, хочу тебе сказать.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <form class="needs-validation" novalidate>
-                  <div class="form-row">
-                    <div class="col-12 col-md-4 offset-md-4">
-                      <div class="form__text">Заполни, пожалуйста, контактные данные.</div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        </div>
-                        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Обратный звонок" aria-describedby="validationTooltipUsernamePrepend" required>
-                        <div class="invalid-tooltip">
-                          Please choose a unique and valid username.
-                        </div>
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fa fa-facebook" aria-hidden="true"></i></span>
-                        </div>
-                        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Facebook" aria-describedby="validationTooltipUsernamePrepend" required>
-                        <div class="invalid-tooltip">
-                          Please choose a unique and valid username.
-                        </div>
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fa fa-google" aria-hidden="true"></i></span>
-                        </div>
-                        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Google" aria-describedby="validationTooltipUsernamePrepend" required>
-                        <div class="invalid-tooltip">
-                          Please choose a unique and valid username.
-                        </div>
-                      </div>
-                    <button class="btn btn-primary" type="submit">Отправить</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="row brands">
-              <div class="col-12">
-                <p class="title is-4">Бренды с которыми уже плодотворно сотрудничаю</p>
-                <div>
-                  <a href="#">АВК</a>, 
-                  <a href="#">SunInBev</a>, 
-                  <a href="#">АВК</a>, 
-                  <a href="#">SunInBev</a> </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        {{ if .Site.Params.localTime }}
-        <p>My current local time is <span id="time"></span>.</p>
-        <script type="text/javascript" src="/js/moment.js"></script>
-        <script type="text/javascript" src="/js/moment-timezone.js"></script>
-        <script type="text/javascript" src="/js/moment-timezone-with-data-2012-2022.js"></script>
-
-        <script>
-            $(document).ready(function() {
-                var time = moment().tz("{{ .Site.Params.timeZone }}").format("h:mm A");
-                $('#time').html(time);
-            })
-        </script>
-        {{ end }} 
-
-        <!-- End Contact section -->
-        {{ partial "footer.html" . }}
-
-
-    </div>
-    <!-- st-container -->
-
-    <div id="side-nav-mask"></div>
+  <div id="side-nav-mask"></div>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -289,16 +60,15 @@
       </div>
     </div>
 
-
     <!-- Bitty scrolling links script -->
     <script>
-        $('a[href^="#"]').click(function(e) {
-            e.preventDefault();
-            var target = this.hash;
-            $('html, body').animate({
-                scrollTop: $(target).offset().top
-            }, 500);
-            return false;
-        })
+      $('a[href^="#"]').click(function(e) {
+          e.preventDefault();
+          var target = this.hash;
+          $('html, body').animate({
+              scrollTop: $(target).offset().top
+          }, 500);
+          return false;
+      })
     </script>
 </body>
