@@ -13,14 +13,14 @@
                         {{ .Site.Params.firstName | safeHTML }}
                     </h1>
                 </div>
-                <h3 class="pb-2rem {{ if.Site.Params.fadeIn }} fade-in two{{ end }}">
+                <h3 class="pb-2rem subtitle is-4 {{ if.Site.Params.fadeIn }} fade-in two{{ end }}">
                     {{ .Site.Params.tagLine }}
                 </h3>
                 <div class="hero-description">
-                    <div>{{ with .Site.Params.optimization }}{{ .}}{{ end }}</div>
-                    <div>{{ with .Site.Params.mission }}{{ .}}{{ end }}</div>
-                    <div>{{ with .Site.Params.effect }}{{ . | safeHTML }}{{ end }}</div>
-                    <div class="watch-result has-text-centered">Давай проверим скорость загрузки и уровень защиты</div>
+                    <div class="subtitle is-4">{{ with .Site.Params.optimization }}{{ .}}{{ end }}</div>
+                    <div class="subtitle is-4">{{ with .Site.Params.mission }}{{ .}}{{ end }}</div>
+                    <div class="subtitle is-4">{{ with .Site.Params.effect }}{{ . | safeHTML }}{{ end }}</div>
+                    <div class="watch-result has-text-centered subtitle is-4">Давай проверим скорость загрузки и уровень защиты</div>
                     <div class="row">
                        <div class="col-12 col-md-6 offset-md-3">
                             <div class="input-group mb-3">

@@ -160,10 +160,6 @@
   padding: 0;
 }
 
-.bold-title {
-  font-size: 4rem;
-}
-
 .hero {
   width: 100%;
   display: flex;
@@ -178,7 +174,6 @@
 }
 .hero-top .subtitle {
   padding-right: 3rem;
-  font-size: 1rem;
 }
 
 .hero-body {
