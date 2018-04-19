@@ -7,12 +7,12 @@
     <div class="hero is-{{ .Site.Params.introHeight }}">
         <div class="hero-body">
             <div class="container">
-                <div class="subtitle is-4">
-                    {{ .Site.Params.welcome }}
+                <div class="hero-top">
+                    <div class="subtitle is-4">{{ .Site.Params.welcome }}</div>
+                    <h1 class="bold-title has-text-centered {{ if .Site.Params.fadeIn }}fade-in one{{ end }}">
+                        {{ .Site.Params.firstName | safeHTML }}
+                    </h1>
                 </div>
-                <h1 class="bold-title has-text-centered {{ if .Site.Params.fadeIn }}fade-in one{{ end }}">
-                    {{ .Site.Params.firstName }}
-                </h1>
                 <h3 class="pb-2rem subtitle is-4 {{ if.Site.Params.fadeIn }} fade-in two{{ end }}">
                     {{ .Site.Params.tagLine }}
                 </h3>

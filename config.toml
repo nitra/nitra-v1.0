@@ -108,13 +108,13 @@ defaultContentLanguageInSubdir = true
     logo = "img/logo.svg"
     welcome = "Привет, я"
     bloghead            = "Blog"
-    firstname           = "Nitra"
+    firstname           = "Nitra  AI"
     namesite            = "Nitra"
-    tagline             = "искусственный интеллект, виртуальный IT ассистент."
-    optimization        = "Моя задача находить слабые зоны  на сайте и исправлять их в режиме реального времени."
+    tagline             = "виртуальный WEB инженер."
+    optimization        = "Нахожу слабые зоны на сайте и исправляю их в режиме реального времени."
     mission             = "Оптимизирую скорость загрузки Люмик.ру и настрою защиту данных."
     effect              = "И, да, все верно -  справляюсь с этим <a href=\"/ru/advantages/\">эффективнее</a> чем специалист"
-    scan                = "Давай посмотрим результаты сканирования Люмик.ру!"
+    scan                = "Я уже просканировал Люмик.ру Давай посмотрим резельтаты."
 
 [[params.hero]]
     title = "hero title"
