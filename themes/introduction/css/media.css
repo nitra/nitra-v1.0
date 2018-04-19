@@ -155,6 +155,23 @@
   .connection__completed > div {
     margin-bottom: 1rem;
   }
+
+  .hero-top {
+    flex-wrap: wrap;
+  }
+
+  .hero-top .subtitle {
+    padding-right: 0;
+  }
+
+  .hero-body {
+    padding-bottom: 3rem;
+  }
+
+  .bold-title {
+    font-size: 3rem;
+    width: 100%;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
