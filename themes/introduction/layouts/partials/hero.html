@@ -6,22 +6,46 @@
     <!-- Done with nav bar -->
     <div class="hero is-{{ .Site.Params.introHeight }}">
         <div class="hero-body">
-            <div class="container has-text-centered">
+            <div class="container">
                 <div class="hero-top">
                     <div class="subtitle is-4">{{ .Site.Params.welcome }}</div>
                     <h1 class="bold-title has-text-centered {{ if .Site.Params.fadeIn }}fade-in one{{ end }}">
                         {{ .Site.Params.firstName | safeHTML }}
                     </h1>
                 </div>
-                <h3 class="pb-2rem subtitle is-4 {{ if.Site.Params.fadeIn }} fade-in two{{ end }}">
-                    {{ .Site.Params.tagLine }}
-                </h3>
-                <div class="hero-description">
-                    <div>{{ with .Site.Params.optimization }}{{ .}}{{ end }}</div>
-                    <div>{{ with .Site.Params.mission }}{{ .}}{{ end }}</div>
-                    <div>{{ with .Site.Params.effect }}{{ . | safeHTML }}{{ end }}</div>
-                    <div class="watch-result has-text-centered">{{ with .Site.Params.scan }}{{ .}}{{ end }}</div>
-                    <div class="container has-text-centered"><a class="btn btn-primary" href="#scanner">Диагностика</a></div>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="pb-4rem subtitle is-3 has-text-centered {{ if.Site.Params.fadeIn }} fade-in two{{ end }}">
+                        {{ .Site.Params.tagLine }}
+                    </h3>
+                  </div>
+                </div>
+                <div class="hero-description row">
+                  <div class="col-12 col-md-6">
+                    <div class="">{{ with .Site.Params.optimization }}{{ .}}{{ end }}</div>
+                    <div class="">{{ with .Site.Params.mission }}{{ .}}{{ end }}</div>
+                    <!-- <div class="">{{ with .Site.Params.effect }}{{ . | safeHTML }}{{ end }}</div>
+                    <div class="">{{ with .Site.Params.effect }}{{ . | safeHTML }}{{ end }}</div> -->
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="watch-result">{{ with .Site.Params.effect }}{{ .}}{{ end }}</div>
+                     <div class="">{{ with .Site.Params.scan }}{{ . | safeHTML }}{{ end }}</div>
+                    <!-- <div class="row">
+                      <div class="col-12 col-md-10">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Ваш сайт</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="www.site.com" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                    </div>
+                      <a class="btn btn-primary" href="#scanner">Диагностика</a> -->
+                
+                  </div>
+                </div>
+                <div class="container has-text-centered">
+                    <a href="#scanner"><i class="fa fa-arrow-down"></i></a>
                 </div>
             </div>
         </div>

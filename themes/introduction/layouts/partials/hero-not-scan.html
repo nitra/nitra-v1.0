@@ -28,7 +28,7 @@
                     <div class="">{{ with .Site.Params.effect }}{{ . | safeHTML }}{{ end }}</div>
                   </div>
                   <div class="col-12 col-md-6">
-                    <div class="watch-result">Давай проверим  насколько твой сайт удобен клиентам:</div>
+                    <div class="watch-result">{{ with .Site.Params.effect2 }}{{ .}}{{ end }}</div>
                     <div class="row">
                       <div class="col-12 col-md-10">
                         <div class="input-group mb-3">
