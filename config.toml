@@ -106,13 +106,14 @@ defaultContentLanguageInSubdir = true
 [languages]
 [languages.ru]
     logo = "img/logo.svg"
-    welcome = "Привет, я"
+    #welcome = "Привет, я"
     bloghead            = "Blog"
-    firstname           = "Nitra"
+    firstname           = "Привет, я Nitra"
     namesite            = "Nitra"
     tagline             = "искусственный интеллект, виртуальный WEB инженер."
     optimization        = "Нахожу слабые зоны на сайте и исправляю их в режиме реального времени."
-    mission             = "Оптимизирую скорость загрузки Люмик.ру и настрою защиту данных."
+    mission             = "Оптимизирую скорость загрузки  сайта и настрою защиту данных."
+    mission2            = "Если ты хочешь сделать апгрейд сайта -  мне нет равных!"
     effect              = ""
     scan                = "Я уже просканировал Люмик.ру Давай посмотрим резельтаты."
 
