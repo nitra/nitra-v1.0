@@ -6,7 +6,7 @@
     <!-- Done with nav bar -->
     <div class="hero is-{{ .Site.Params.introHeight }}">
         <div class="hero-body">
-            <div class="container">
+            <div class="container has-text-centered">
                 <div class="hero-top">
                     <div class="subtitle is-4">{{ .Site.Params.welcome }}</div>
                     <h1 class="bold-title has-text-centered {{ if .Site.Params.fadeIn }}fade-in one{{ end }}">
@@ -20,8 +20,8 @@
                     <div>{{ with .Site.Params.optimization }}{{ .}}{{ end }}</div>
                     <div>{{ with .Site.Params.mission }}{{ .}}{{ end }}</div>
                     <div>{{ with .Site.Params.effect }}{{ . | safeHTML }}{{ end }}</div>
-                    <div class="watch-result title is-4 has-text-centered">{{ with .Site.Params.scan }}{{ .}}{{ end }}</div>
-                    <div class="container has-text-centered"><a href="#scanner"><i class="fa fa-arrow-down"></i></a></div>
+                    <div class="watch-result has-text-centered">{{ with .Site.Params.scan }}{{ .}}{{ end }}</div>
+                    <div class="container has-text-centered"><a class="btn btn-primary" href="#scanner">Диагностика</a></div>
                 </div>
             </div>
         </div>
