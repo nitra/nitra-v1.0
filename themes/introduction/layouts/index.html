@@ -25,10 +25,10 @@
     <script type="text/javascript" src="/js/moment-timezone-with-data-2012-2022.js"></script>
 
     <script>
-        $(document).ready(function() {
-            var time = moment().tz("{{ .Site.Params.timeZone }}").format("h:mm A");
-            $('#time').html(time);
-        })
+      $(document).ready(function() {
+        var time = moment().tz("{{ .Site.Params.timeZone }}").format("h:mm A");
+        $('#time').html(time);
+      })
     </script>
     {{ end }} 
     <!-- End Contact section -->

@@ -172,6 +172,26 @@
     font-size: 3rem;
     width: 100%;
   }
+
+  .help {
+    padding-top: 1rem;
+  }
+
+  .forecast .button-wrap {
+    padding-top: 1rem;
+  }
+
+  .card-body {
+    padding: 0.5rem;
+  }
+
+  a.card__link.subtitle.is-4 {
+    font-size: 18px;
+  }
+
+  form button.btn {
+    width: 100%;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
@@ -182,6 +202,18 @@
 
   .successful .btn {
     min-width: 50%;
+  }
+
+  .card__link {
+    font-size: 15px;
+  }
+
+  a.card__link.subtitle.is-4 {
+    font-size: 15px;
+  }
+
+  p.card-text {
+    font-size: 14px;
   }
 }
 /*==========  Mobile First  ========== */

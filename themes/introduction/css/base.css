@@ -38,6 +38,10 @@ button.btn.btn-primary {
   margin-bottom: 1rem;
 }
 
+#payment-modal .modal-header {
+  border-bottom: none;
+}
+
 .sigle__page__content {
   width: 100%;
   margin: 0 auto;
@@ -61,10 +65,15 @@ button.btn.btn-primary {
   justify-content: center;
   align-items: center;
   text-align: center;
-  line-height: 35px;
+  line-height: 40px;
 }
 .money-back .fa {
   font-size: 3rem;
   display: inline-block;
   margin: 0 3rem;
+}
+
+.money-days span {
+  position: relative;
+  left: -5px;
 }
