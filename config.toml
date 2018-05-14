@@ -37,6 +37,11 @@ defaultContentLanguageInSubdir = true
         url = "ru/advantages/"
         weight = 14
     [[menu.main]]
+        name = "Скорость загрузки сайта"
+        identifier = "connection"
+        url = "ru/speed/"
+        weight = 14    
+    [[menu.main]]
         name = "Алгоритмы сжатия изображений"
         identifier = "algorithm"
         url = "ru/speed-optimization-algorithms/"
@@ -53,9 +58,14 @@ defaultContentLanguageInSubdir = true
         weight = 17
     [[menu.main]]
         name = "Управление акаунтом"
-        identifier = "glossary2"
-        url = "ru/glossary/"
+        identifier = "account-management"
+        url = "ru/account-management/"
         weight = 18
+    [[menu.main]]
+        name = "Политика конфиденциальности"
+        identifier = "privacy-policy"
+        url = "ru/privacy-policy/"
+        weight = 19    
 
 # enableMissingTranslationPlaceholders = true 
 [params] 

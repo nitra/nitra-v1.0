@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <body class="speed-page">
-    
+
     {{ partial "nav-list.html" . }}
 
     <div id="content" class="">
@@ -12,7 +12,7 @@
         <!-- End Title -->
         <!-- Everything below fades in two! -->
         <div class="section speed">
-            <div class="container markdown sigle__page__content">
+            <div class="container  sigle__page__content">
                 {{ .Content }}
                 <div class="col-12">
                     <p>Владельцы сайта воспринимают сайт как арт-объект, ценят красивый дизайн, реже задумываются об удобстве для клиента. </p>
@@ -28,21 +28,23 @@
                         <div class="col-8">задержки загрузки приводит до 1% снижения корзины</div>
                     </div>
                     <div class="row">
-                            <div class="col-2 offset-md-1 speed-test__number"><span>S</span> <span class=""/span></div>
-                            <div class="col-8"><p></p>cкорость - основной фактор влияющий на ранжирование в поисковой системе Google, которой пользуются две трети всех пользователей в мире.</p></div>
+                        <div class="col-2 offset-md-1 speed-test__number"><span>S</span></div>
+                        <div class="col-8">
+                            <p></p>cкорость - основной фактор влияющий на ранжирование в поисковой системе Google, которой пользуются две трети всех пользователей в мире.</p>
                         </div>
+                    </div>
                 </div>
                 <div class="col-8">
 
-                    
-                         
+
+
                 </div>
                 <div class="row">
                     <div class="col-1 speed-scann-namber">1</div>
                     <div class="col-8 scanner__item__result">
                         <div class="result__indicators">
                             <div class="result__time">
-                                <span class="time"/span>
+                                <span class="time" /span>
                                 <span></span>
                                 <div class="icon"><img src="/img/two-down-chevron.svg" alt=""></div>
                             </div>
@@ -62,26 +64,35 @@
                     </div>
                 </div>
                 <div class="row">
-                        <div class="col-1 speed-scann-namber">1</div>
-                        <div class="col-12 col-md-8">                     <p>Ваш сайт загружается дольше 10 секунд в сети 3G</p></p></div>
                     <div class="col-1 speed-scann-namber">2</div>
-                    <div class="col-12 col-md-8"> на сайте не интегрированы  алгоритмы, повышающие производительность сайта  HTTP/2,  ALPN, IPV6           </div>
+                    <div class="col-12 col-md-8">
+                        <p>Ваш сайт загружается дольше 10 секунд в сети 3G</p>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-1 speed-scann-namber">3</div>
+                    <div class="col-12 col-md-8"> на сайте не интегрированы алгоритмы, повышающие производительность сайта HTTP/2, ALPN, IPV6 </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 speed-scann-namber">4</div>
                     <div class="col-12 col-md-8">Не интегрированы алгоритмы, оптимизирующие видео или изображения</div>
                 </div>
                 <div class="row">
                     <div class="col-1 speed-scann-namber"></div>
-                    <div class="col-12 col-md-8">
+                    <!-- <div class="col-12 col-md-8">
                         <a id="go-to" href="{{ .Site.BaseURL }}ru/#forecast/">Посмотрим прогноз улучшения показателей Вашего сайта?</a>
-                    </div>
+                    </div> -->
+
                 </div>
                 <div class="row"></div>
-                <div class="row"></div>
+                <div class="row">
+                    <div class="button-wrap" style="width: 100%">
+                        <a href="{{ .Site.BaseURL }}ru/connection/" class="btn btn-primary">Подключаем</a>
+                    </div>
+                </div>
             </div>
 
-        <!-- <div class="container sigle__page__content algorithm">
+            <!-- <div class="container sigle__page__content algorithm">
             <div class="row">
                 <div class="col-12">
                     <div class="title is-3">Алгоритмы оптимизации изображений</div>
@@ -117,20 +128,20 @@
         </div> -->
 
         </div>
-            {{ partial "footer.html" . }}
-        </div>
-        <!-- End fade in two -->
+        {{ partial "footer.html" . }}
+    </div>
+    <!-- End fade in two -->
 
     </div>
     <!-- Bitty scrolling links script -->
     <script>
-    $('a[href^="{{ .Permalink }}#"]').click(function(e) {
-        e.preventDefault();
-        var target = this.hash;
-        $('html, body').animate({
-            scrollTop: $(target).offset().top
-        }, 500);
-        return false;
-    })
+        $('a[href^="{{ .Permalink }}#"]').click(function(e) {
+            e.preventDefault();
+            var target = this.hash;
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 500);
+            return false;
+        })
     </script>
 </body>
