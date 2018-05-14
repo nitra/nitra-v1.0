@@ -17,7 +17,7 @@ defaultContentLanguageInSubdir = true
         url = "/"
         weight = 10
     [[menu.main]]
-        name = "Как работает Nitra.ai"
+        name = "Как я работаю"
         identifier = "howWork"
         url = "/ru/how-it-work/"
         weight = 11
@@ -32,26 +32,30 @@ defaultContentLanguageInSubdir = true
         url = "ru/data-protect/"
         weight = 13
     [[menu.main]]
-        name = "Преимущества"
+        name = "Nitra vs Homo Sapiens"
         identifier = "connection"
         url = "ru/advantages/"
         weight = 14
     [[menu.main]]
-        name = "Алгоритмы оптимизации"
+        name = "Алгоритмы сжатия изображений"
         identifier = "algorithm"
         url = "ru/speed-optimization-algorithms/"
         weight = 15
     [[menu.main]]
-        name = "Облачная интеграция"
+        name = "Облако или сервер?"
         identifier = "cloud-server"
         url = "ru/cloud-server/"
         weight = 16
     [[menu.main]]
-        name = "Раздел аббревиатур"
+        name = "Раздел аббревиатур2"
         identifier = "glossary"
         url = "ru/glossary/"
         weight = 17
-
+    [[menu.main]]
+        name = "Управление акаунтом"
+        identifier = "glossary2"
+        url = "ru/glossary/"
+        weight = 18
 
 # enableMissingTranslationPlaceholders = true 
 [params] 
@@ -80,7 +84,7 @@ defaultContentLanguageInSubdir = true
     sharefacebook       = true
     sharepinterest      = false
     sharegoogleplus     = true
-    footerPhone         = "+371 267 59 278"
+    footerPhone         = "+371 267 59 278" 
     email               = "ai@nitra.ai"         # Shows in contact section, or leave blank to omit
     avatar              = "img/profile.jpg"             # Path to image in static folder eg. img/avatar.png, or comment out to remove
     # Navigation
@@ -114,10 +118,10 @@ defaultContentLanguageInSubdir = true
     optimization        = "Нахожу слабые зоны на сайте и исправляю их в режиме реального времени."
     mission             = "Оптимизирую скорость загрузки  сайта и настрою защиту данных."
     mission2            = "Если ты хочешь сделать апгрейд сайта -  мне нет равных!"
-    effect              = "Я уже сделала 2,5 млн. замеров на сайте. и убедилась, что Люмик. ру теряет клиентов."
+    effect              = "Я уже сделала 2,5 млн. замеров на сайте. и убедилась, что Ваш сайт теряет клиентов."
     effect2             = "Давай проверим  насколько твой сайт удобен клиентам:"
-    scan                = "Давай посмотрим - в чем проблема."
-    scan2               = "Я уже просканировал Люмик.ру Давай посмотрим резельтаты."
+    scan                = "Давай посмотрим, в чем проблема."
+    scan2               = "Я уже просканировал сайт Давай посмотрим результаты."
 
 [[params.hero]]
     title = "hero title"
