@@ -61,11 +61,7 @@ defaultContentLanguageInSubdir = true
         identifier = "account-management"
         url = "ru/account-management/"
         weight = 18
-    [[menu.main]]
-        name = "Политика конфиденциальности"
-        identifier = "privacy-policy"
-        url = "ru/privacy-policy/"
-        weight = 19    
+  
 
 # enableMissingTranslationPlaceholders = true 
 [params] 

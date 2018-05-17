@@ -170,6 +170,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: auto;
+}
+
+.hero.is-fullheight {
+  height: auto;
 }
 
 .hero-top {
@@ -182,8 +187,14 @@
 }
 
 .hero-body {
-  padding-top: 6%;
+  padding-top: 9%;
   width: 100%;
+  padding-bottom: 0;
+}
+
+.modal-body {
+  padding: 2rem;
+  line-height: 27px;
 }
 
 .hero-foot {
@@ -213,11 +224,17 @@
   display: none;
 }
 
-.help {
+.section .help {
   padding-left: 0%;
   margin-bottom: 0%;
   text-align: center;
   padding-top: 5rem;
+  line-height: 30px;
+  margin-bottom: 50px !important;
+}
+
+#scanner .help {
+  padding-top: 0;
 }
 
 .breadcrumbs li:before {
@@ -260,7 +277,6 @@
 
 .section.scanner {
   padding-top: 0rem;
-  margin-bottom: 2rem;
 }
 
 .scanner__item {
@@ -283,7 +299,8 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: 30px;
+  padding-top: 0px;
+  top: -30px;
 }
 
 .result__indicators {
@@ -370,6 +387,10 @@
   display: none;
 }
 
+.card__link {
+  text-align: center;
+}
+
 .connection__card__wrap {
   display: flex;
   justify-content: center;
@@ -408,7 +429,7 @@
 }
 
 .connection__info {
-  padding-top: 6rem;
+  padding-top: 3rem;
 }
 .connection__info .input-group {
   margin-bottom: 1rem;
@@ -421,6 +442,7 @@
 
 .connection__info__text {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .form__text {
@@ -429,7 +451,7 @@
 
 .brands {
   padding: 3rem 0;
-  padding-top: 5rem;
+  padding-top: 2rem;
   text-align: center;
 }
 
@@ -588,4 +610,34 @@
 
 .mobile {
   display: none;
+}
+
+#footer .legal-information {
+  padding-top: 2rem;
+}
+#footer .legal-information a {
+  font-size: 15px;
+  display: inline-block;
+  margin: 0 10px;
+  color: #999999;
+}
+
+.legal-information a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.sigle__page__content h2, .sigle__page__content h3, .sigle__page__content h4, .sigle__page__content h5 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.sigle__page__content li {
+  margin-bottom: 1rem;
+}
+.sigle__page__content h4 {
+  font-size: 1.5rem;
+}
+
+blockquote {
+  margin-bottom: 3rem !important;
 }

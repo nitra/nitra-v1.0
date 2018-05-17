@@ -1,9 +1,15 @@
 <div class="section" id="footer">
     <!-- Begin Footer section -->
-    <div class="container has-text-centered">
-        <!-- Begin Footer container -->
-        {{ partial "social.html" . }}
 
+    <div class="container has-text-centered">
+        <div class="social-icons">
+            {{ range .Site.Params.social }}
+            <a href="{{ .url }}">
+                <i class="fa fa-{{ .icon}}"></i>
+            </a>
+            {{ end }}
+        </div>
+        <!-- Begin Footer container -->
         <div class="footer__content has-text-centered">
             <div>Контактная информация:</div>
             <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>,
@@ -12,7 +18,10 @@
         </div>
 
 
-
+        <div class="legal-information">
+            <a href="{{ .Site.BaseURL }}ru/term-use/"> Пользовательское соглашение</a>
+            <a href="{{ .Site.BaseURL }}ru/privacy-policy/"> Политика конфиденциальности</a>
+        </div>
         {{ if .Site.Params.footerText }} {{ .Site.Params.footerText }} {{ else }} {{ end }}
     </div>
     <!-- End Footer container -->

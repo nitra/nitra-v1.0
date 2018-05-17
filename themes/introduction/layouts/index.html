@@ -2,74 +2,67 @@
 
 <body>
 
-  {{ partial "nav-list.html" . }}
+    {{ partial "nav-list.html" . }}
 
-  <div id="content" class="">
-    <div id="top"></div>
+    <div id="content" class="">
+        <div id="top"></div>
 
-    <!-- Where all the awesome begins -->
-    {{ partial "hero.html" . }}
-    <!-- {{ partial "hero-not-scan.html" . }} -->
-    
-    {{ partial "scan.html" }}
+        <!-- Where all the awesome begins -->
+        {{ partial "hero.html" . }}
+        <!-- {{ partial "hero-not-scan.html" . }} -->
 
-    {{ partial "forecast.html" }}
+        {{ partial "scan.html" }} {{ partial "forecast.html" }} {{ partial "social.html" }} {{ if .Site.Params.localTime }}
+        <p>My current local time is <span id="time"></span>.</p>
+        <script type="text/javascript" src="/js/moment.js"></script>
+        <script type="text/javascript" src="/js/moment-timezone.js"></script>
+        <script type="text/javascript" src="/js/moment-timezone-with-data-2012-2022.js"></script>
 
-    {{ partial "connection.html" }}
+        <script>
+            $(document).ready(function() {
+                var time = moment().tz("{{ .Site.Params.timeZone }}").format("h:mm A");
+                $('#time').html(time);
+            })
+        </script>
+        {{ end }}
+        <!-- End Contact section -->
+        {{ partial "footer.html" . }}
 
+    </div>
+    <!-- st-container -->
 
-    {{ if .Site.Params.localTime }}
-    <p>My current local time is <span id="time"></span>.</p>
-    <script type="text/javascript" src="/js/moment.js"></script>
-    <script type="text/javascript" src="/js/moment-timezone.js"></script>
-    <script type="text/javascript" src="/js/moment-timezone-with-data-2012-2022.js"></script>
-
-    <script>
-      $(document).ready(function() {
-        var time = moment().tz("{{ .Site.Params.timeZone }}").format("h:mm A");
-        $('#time').html(time);
-      })
-    </script>
-    {{ end }} 
-    <!-- End Contact section -->
-    {{ partial "footer.html" . }}
-
-  </div>
-  <!-- st-container -->
-
-  <div id="side-nav-mask"></div>
+    <div id="side-nav-mask"></div>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">GOOGLE CLOUD STARTUP PROGRAM</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">GOOGLE CLOUD STARTUP PROGRAM</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
-          <div class="modal-body">
-            Я рада быть частью GOOGLE CLOUD STARTUP PROGRAM.
-            Использую инфраструктурные мощности Google при сканировании сайта, а это миллионы замеров. Создаю прототип твоего сайта и тестирую все улучшения по повышению безопасности и производительности на прототипе. Это настоящая симуляция работы и лишь убедившись в выборе наилучшей комбинации, перехожу к интеграциии. Это моя фишка!
-          </div>
-          <!-- <div class="modal-footer">
+                </div>
+                <div class="modal-body">
+                    Я рада быть частью GOOGLE CLOUD STARTUP PROGRAM. Использую инфраструктурные мощности Google при сканировании сайта, а это миллионы замеров. Создаю прототип твоего сайта и тестирую все улучшения по повышению безопасности и производительности на прототипе.
+                    Это настоящая симуляция работы и лишь убедившись в выборе наилучшей комбинации, перехожу к интеграциии. Это моя фишка!
+                </div>
+                <!-- <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
           </div> -->
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Bitty scrolling links script -->
     <script>
-      $('a[href^="#"]').click(function(e) {
-          e.preventDefault();
-          var target = this.hash;
-          $('html, body').animate({
-              scrollTop: $(target).offset().top
-          }, 500);
-          return false;
-      })
+        $('a[href^="#"]').click(function(e) {
+            e.preventDefault();
+            var target = this.hash;
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 500);
+            return false;
+        })
     </script>
 </body>
