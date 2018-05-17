@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <body class="connection">
-  
+
     {{ partial "nav-list.html" . }}
 
     <div id="content" class="">
@@ -17,76 +17,77 @@
             <!-- Everything below fades in two! -->
             <div class="section {{ if .Site.Params.fadeIn }} fade-in two {{ end }}">
                 <div class="container markdown {{ if .Site.Params.fadeIn }} fade-in two {{ end }} top-pad">
-                  <div class="row">
-                    <div class="col-md-4 offset-md-4 col-10 offset-1 pl-0 pr-0">
-                      <div class="card">
-                          <div class="card-header">
-                            <div class="row" style="width: 100%">
-                            <div class="col-md-5 col-12 pt-2 pr-0">
-                              <h6 class="m-0"><strong>Детали оплаты</strong></h6>
-                            </div>
-                            <div class="col-md-7 col-12 icons pr-0">
-                              <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
-                              <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
-                              <i class="fa fa-cc-discover fa-2x" aria-hidden="true"></i>
-                              <i class="fa fa-cc-amex fa-2x" aria-hidden="true"></i>
-                            </div>
-                          </div>
-                          </div>
-                          <div class="card-body">
-                            <form id="payments-form" data-toggle="modal" data-target="#payment-modal">
-                              <div class="form-group">
-                                  <div class="input-group">
-                                    <input readonly type="text" class="form-control border-right-0" id="validationTooltipCardNumber" placeholder="20">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text rounded-right" id="validationTooltipCardNumber">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4 col-10 offset-1 pl-0 pr-0">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row" style="width: 100%">
+                                        <div class="col-md-5 col-12 pt-2 pr-0">
+                                            <h6 class="m-0"><strong>Детали оплаты</strong></h6>
+                                        </div>
+                                        <div class="col-md-7 col-12 icons pr-0">
+                                            <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+                                            <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
+                                            <i class="fa fa-cc-discover fa-2x" aria-hidden="true"></i>
+                                            <i class="fa fa-cc-amex fa-2x" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <form id="payments-form" data-target="#payment-modal">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input readonly type="text" class="form-control border-right-0" id="validationTooltipCardNumber" placeholder="20">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text rounded-right" id="validationTooltipCardNumber">
                                           <i class="fa fa-usd" aria-hidden="true"></i>
                                         </span>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                  <label for="validationTooltipCardNumber"><strong>НОМЕР КАРТЫ</strong></label>
-                                  <div class="input-group">
-                                    <input type="text" class="form-control border-right-0" id="validationTooltipCardNumber" placeholder="Номер карты">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text rounded-right" id="validationTooltipCardNumber"><i class="fa fa-credit-card"></i></span>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-7 col-12">
-                                  <div class="form-group">
-                                    <label for="exampleInputExpirationDate"><strong>СРОК ДЕЙСТВИЯ</strong></label>
-                                    <div class="input-group">
-                                      <input type="text" class="form-control border-right-0" id="exampleInputExpirationDate" placeholder="MM / YY">
-                                      <div class="input-group-prepend">
-                                          <span class="input-group-text rounded-right" id="validationTooltipCardNumber">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="validationTooltipCardNumber"><strong>НОМЕР КАРТЫ</strong></label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control border-right-0" id="validationTooltipCardNumber" placeholder="Номер карты">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text rounded-right" id="validationTooltipCardNumber"><i class="fa fa-credit-card"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7 col-12">
+                                                <div class="form-group">
+                                                    <label for="exampleInputExpirationDate"><strong>СРОК ДЕЙСТВИЯ</strong></label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control border-right-0" id="exampleInputExpirationDate" placeholder="MM / YY">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text rounded-right" id="validationTooltipCardNumber">
                                             <i class="fa fa-calendar" aria-hidden="true"></i>
                                           </span>
-                                      </div>
-                                    </div>
-                                  </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12">
+                                                <div class="form-group">
+                                                    <label for="exampleInputCvcCode"><strong>CVC КОД</strong></label>
+                                                    <input type="text" class="form-control" id="exampleInputCvcCode" placeholder="CVC">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-1rem">
+                                                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                    <input type="checkbox" class="custom-control-input" id="customControlInline" required>
+                                                    <label class="custom-control-label" for="customControlInline">Согласен с условиями <a href="/ru/term-use/">Пользовательского соглашения</a> и
+                                                      <a href="ru/privacy-policy/">Политикой Конфиденциальности</a>. <br> Подписываюсь на рассылку информации в виде электронных писем от имени Nitra. Вы также соглашаетесь с тем, что Nitra использует cookies для улучшения работы сайта.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-info w-100 pb-2 pt-2">Подтвердить</button>
+                                    </form>
                                 </div>
-                                <div class="col-md-4 col-12">
-                                  <div class="form-group">
-                                    <label for="exampleInputCvcCode"><strong>CVC КОД</strong></label>
-                                    <input type="text" class="form-control" id="exampleInputCvcCode" placeholder="CVC">
-                                </div>
-                                </div>
-                                <div class="col-12 mb-1rem">
-                                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
-                                    <input type="checkbox" class="custom-control-input" id="customControlInline" required>
-                                    <label class="custom-control-label" for="customControlInline">Согласен с условиями пользовательского <a href="#">соглашения</a></label>
-                                  </div>
-                                </div>
-                              </div>
-                              <button class="btn btn-info w-100 pb-2 pt-2">Подтвердить</button>
-                          </form>
-                          </div>
-                      </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
 
                     {{ .Content }}
                 </div>
@@ -114,32 +115,32 @@
 
     <!-- Modal -->
     <div class="modal fade" id="payment-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
-          <div class="modal-body subtitle has-text-centered pb-4rem">
-           Механизм оплаты на сайте не интегрирован
-          </div>
-          <!-- <div class="modal-footer">
+                </div>
+                <div class="modal-body subtitle has-text-centered pb-4rem">
+                    Механизм оплаты на сайте не интегрирован
+                </div>
+                <!-- <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
           </div> -->
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Bitty scrolling links script -->
     <script>
-
-      $('#payments-form').submit(function(e) {
-        e.preventDefault();
-        //window.location.href = '{{ .Site.BaseURL }}ru/successful/';
-      });
+        $('#payments-form').submit(function(e) {
+            e.preventDefault();
+            $('#payment-modal').modal('show');
+            //window.location.href = '{{ .Site.BaseURL }}ru/successful/';
+        });
 
         $('a[href^="{{ .Permalink }}#"]').click(function(e) {
             e.preventDefault();

@@ -45,4 +45,10 @@ Lumik.ru  входит в сотню сайтов с худшими показа
 
 
 Мое преимущество в том, что я настраиваю протоколы по защите данных, HTTPS, HSTS, ECDSA, PFS, но вместе с этим нейтрализую эффект замедления работы сайта. 
+
+<div class="container">
+<div class="button-wrap">
+<a href="/ru/connection/" class="btn btn-primary btn-lg">Старт</a>
+</div>
+</div>
  

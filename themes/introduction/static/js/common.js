@@ -16,9 +16,8 @@ $(document).ready(function() {
         }
     });
 
+    $('.button-wrap .btn-primary').addClass('btn-lg');
+
+
+
 });
-
-
-
-
-

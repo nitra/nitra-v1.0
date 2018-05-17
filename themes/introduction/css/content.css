@@ -234,7 +234,7 @@
 }
 
 #scanner .help {
-  padding-top: 0;
+  padding-top: 3rem;
 }
 
 .breadcrumbs li:before {
@@ -374,7 +374,7 @@
 }
 
 .btn.btn-primary {
-  min-width: 220px;
+  min-width: 280px;
   text-decoration: none;
 }
 
@@ -640,4 +640,11 @@
 
 blockquote {
   margin-bottom: 3rem !important;
+}
+
+.markdown .button-wrap {
+  padding-top: 2rem;
+}
+.markdown .btn {
+  color: white;
 }

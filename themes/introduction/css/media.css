@@ -117,7 +117,8 @@
   }
 
   .connection__info {
-    padding-top: 3rem;
+    padding-top: 0rem;
+    text-align: left;
   }
 
   .brands {
@@ -197,6 +198,35 @@
     margin: 0;
     padding-left: 0;
   }
+
+  .sigle__page__content h2, .sigle__page__content h3, .sigle__page__content h4, .sigle__page__content h5 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .result__chart--time {
+    font-size: 14px;
+  }
+
+  .result__indicators {
+    padding-top: 2rem;
+  }
+
+  .scanner__item {
+    margin-bottom: 0rem;
+  }
+
+  .connection__info__text {
+    text-align: left;
+  }
+
+  #scanner .help {
+    padding-top: 0;
+  }
+
+  .card__link.subtitle.is-4 {
+    font-size: 16px;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
@@ -220,25 +250,8 @@
   p.card-text {
     font-size: 14px;
   }
-}
-/*==========  Mobile First  ========== */
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /* */
-}
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /* */
-}
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /* */
-}
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /* */
-}
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /* */
+
+  .card__link.subtitle.is-4 {
+    font-size: 14px;
+  }
 }
