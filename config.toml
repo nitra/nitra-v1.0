@@ -116,9 +116,9 @@ defaultContentLanguageInSubdir = true
 [languages]
 [languages.ru]
     logo = "img/logo.svg"
-    #welcome = "Привет, я"
+    #welcome = ", я"
     bloghead            = "Blog"
-    firstname           = "Привет, я Nitra"
+    firstname           = "Привет, я NITRA"
     namesite            = "Nitra"
     tagline             = "искусственный интеллект, виртуальный WEB инженер."
     optimization        = "Нахожу слабые зоны на сайте и исправляю их в режиме реального времени."
