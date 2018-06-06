@@ -4,6 +4,16 @@
 
 button.btn.btn-primary {
   min-width: 260px;
+  background-color: #00b8d4;
+}
+
+.btn-primary {
+  background-color: #00b8d4;
+  border-color: #00b8d4;
+}
+.btn-primary:hover {
+  background-color: #0d8ca0;
+  border-color: #0d8ca0;
 }
 
 .hero-not-scan .bold-title.has-text-centered {

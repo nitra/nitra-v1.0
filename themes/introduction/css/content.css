@@ -318,9 +318,7 @@
   text-shadow: 1px 1px 1px black;
   padding: 10px 0;
   background: #2eea38;
-  background: -moz-linear-gradient(left, #2eea38 0%, #7cbf24 32%, #cee825 51%, #cee825 66%, #c0c920 71%, #ff1e1e 96%);
-  background: -webkit-linear-gradient(left, #2eea38 0%, #7cbf24 32%, #cee825 51%, #cee825 66%, #c0c920 71%, #ff1e1e 96%);
-  background: linear-gradient(to right, #2eea38 0%, #7cbf24 32%, #cee825 51%, #cee825 66%, #c0c920 71%, #ff1e1e 96%);
+  background: linear-gradient(to right, #0d8ca0 1%, #00b8d4 28%, #00b8d4 33%, #00b8d4 48%, #b1cfd3 73%);
 }
 
 .result__time {
@@ -332,6 +330,7 @@
   color: black;
   padding-left: 70%;
   padding-bottom: 40px;
+  color: #00b8d4;
 }
 .result__time:hover {
   text-decoration: none;
