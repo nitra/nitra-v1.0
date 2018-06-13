@@ -156,6 +156,10 @@
   font-size: 14px;
 }
 
+.title, .subtitle {
+  margin-bottom: 1.5rem;
+}
+
 .section {
   padding: 0;
 }
@@ -170,7 +174,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
+}
+
+.top-pad {
+  padding-bottom: 3rem;
 }
 
 .hero.is-fullheight {
@@ -189,7 +196,8 @@
 .hero-body {
   padding-top: 9%;
   width: 100%;
-  padding-bottom: 0;
+  padding-bottom: 18rem;
+  padding-top: 18rem;
 }
 
 .modal-body {
@@ -198,10 +206,23 @@
 }
 
 .hero-foot {
-  position: absolute;
   width: 100%;
-  z-index: 2;
-  text-align: right;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem 0;
+}
+
+.advanteges-item h4 {
+  text-align: center;
+}
+
+.advanteges-item img {
+  border-radius: 0px;
+  border: none;
+  box-shadow: none;
 }
 
 .watch-result.has-text-centered {
@@ -250,20 +271,8 @@
   margin-top: -5px;
 }
 
-.hero-foot__link {
-  margin-top: 30px;
-  display: block;
-  padding-bottom: 0;
-  text-align: right;
-  padding-right: 10%;
-  display: inline-block;
-}
-.hero-foot__link:focus, .hero-foot__link:active {
-  outline: none;
-}
-
-.hero-description div {
-  margin-bottom: 1rem;
+.hero-description {
+  text-align: center;
 }
 .hero-description .input-group-prepend {
   margin-bottom: 0;
@@ -293,6 +302,9 @@
   margin-bottom: 0px;
   display: inline-block;
   color: #00b8d4;
+}
+.content__title:hover {
+  text-decoration: none;
 }
 
 .scanner__item__result {
