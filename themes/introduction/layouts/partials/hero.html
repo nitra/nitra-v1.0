@@ -26,18 +26,22 @@
                     <a href="#scanner"><i class="fa fa-arrow-down"></i></a>
                 </div> -->
             </div>
+            <div class="fade-in three social-icons has-text-centered">
+            {{ range .Site.Params.social }}
+            <a href="{{ .url }}">
+                <i class="fa fa-{{ .icon}}"></i>
+            </a>
+            {{ end }}
+        </div>
         </div>
         <div class="hero-foot fade-in three">
         <hr>
         <nav class="nav-center">
-            <a class="nav-item" href="#about">About</a>
-            
-            <a class="nav-item" href="#projects">Projects</a>
-            
-            
-            <a class="nav-item" href="#blog">Blog</a>
-            
-            <a class="nav-item" href="#contact">Contact</a>
+            <a class="nav-item" href="#scanner">Диагностика</a>
+            <a class="nav-item" href="#forecast">Апгрейд</a>
+            <a class="nav-item" href="#how_it_works">Как я работаю?</a>
+            <a class="nav-item" href="#advanteges">Преимущества</a>
+            <a class="nav-item" href="#footer">Контакты</a>
         </nav>
         <hr>
         </div>

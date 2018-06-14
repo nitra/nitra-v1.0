@@ -9,8 +9,13 @@
     
       <div class="container hero {{ if .Site.Params.fadeIn }} fade-in one {{ end }}">
           <!-- Begin Title -->
-          <h1 class="title is-3">{{ .Title }}</h1>
-    
+          <div class="row">
+            <div class="col-12">
+                <div class="help title is-4 has-text-centered">
+                    <h2 class="title is-2 has-text-centered">{{ .Title }}</h2>
+                </div>
+            </div>
+        </div>
       </div>
       <!-- End Title -->
     
