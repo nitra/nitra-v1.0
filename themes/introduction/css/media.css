@@ -10,6 +10,10 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   /* */
+  body {
+    overflow-x: hidden;
+  }
+
   .hero-body {
     padding: 0;
     padding-top: 5rem;
@@ -18,8 +22,11 @@
   .hero-foot {
     text-align: left;
   }
-  .hero-foot a {
+  .hero-foot .hero-foot__link {
     display: none;
+  }
+  .hero-foot a {
+    width: 100%;
   }
   .hero-foot a.mobile {
     display: block;
@@ -29,6 +36,11 @@
   }
   .hero-foot a.mobile:focus {
     outline: none;
+  }
+
+  .nav-center {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #side-nav {
@@ -226,6 +238,14 @@
 
   .card__link.subtitle.is-4 {
     font-size: 16px;
+  }
+
+  .footer__content {
+    flex-wrap: wrap;
+  }
+  .footer__content h3 {
+    margin: 0;
+    margin-bottom: 0 !important;
   }
 }
 /* Custom, iPhone Retina */

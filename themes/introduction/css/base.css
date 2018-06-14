@@ -36,16 +36,19 @@ button.btn.btn-primary {
   margin-bottom: 1rem;
 }
 
-.single-page .section {
-  padding-top: 4rem;
-}
-
 #payments.section {
   padding-top: 4rem;
 }
 #payments.section .custom-checkbox {
   line-height: 18px;
   margin-bottom: 1rem;
+}
+
+i {
+  color: #00b8d4;
+  font-weight: bold;
+  width: 30px;
+  display: inline-block;
 }
 
 #payment-modal .modal-header {

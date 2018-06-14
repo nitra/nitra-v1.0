@@ -1,7 +1,14 @@
-<div class="section" id="footer">
+<div class="section" id="footer" style="padding-bottom: 0">
     <!-- Begin Footer section -->
 
     <div class="container has-text-centered">
+         <div class="row">
+            <div class="col-12">
+                <div class="help title is-4 has-text-centered">
+                    <h2 class="title is-2 has-text-centered">Контакты</h2>
+                </div>
+            </div>
+        </div>
         <div class="social-icons">
             {{ range .Site.Params.social }}
             <a href="{{ .url }}">
@@ -11,20 +18,25 @@
         </div>
         <!-- Begin Footer container -->
         <div class="footer__content has-text-centered">
-            <div>Контактная информация:</div>
-            <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>,
-            <a href="tel:{{ .Site.Params.footerPhone }}">{{ .Site.Params.footerPhone }}</a>
+            <h3 class="subtitle is-3 has-text-centered"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></h3>
+            <h3 class="subtitle is-3 has-text-centered"><a href="tel:{{ .Site.Params.footerPhone }}">{{ .Site.Params.footerPhone }}</a></h3>
+        </div>
             <p>Латвия, LV-1014 г. Рига, ул. Эзермалас, 13, 20</p>
-        </div>
 
-
-        <div class="legal-information">
-            <a href="{{ .Site.BaseURL }}ru/term-use/"> Пользовательское соглашение</a>
-            <a href="{{ .Site.BaseURL }}ru/privacy-policy/"> Политика конфиденциальности</a>
-        </div>
         {{ if .Site.Params.footerText }} {{ .Site.Params.footerText }} {{ else }} {{ end }}
+
+        <div class="container has-text-centered top-pad"><a href="#top"><i class="fa fa-arrow-up"></i></a></div>
+        <hr>
     </div>
     <!-- End Footer container -->
+</div>
+<div class="section">
+    <div class="container has-text-centered">
+        <span class="footer-text">
+           <a href="{{ .Site.BaseURL }}ru/term-use/"> Пользовательское соглашение</a>
+            <a href="{{ .Site.BaseURL }}ru/privacy-policy/"> Политика конфиденциальности</a>
+       </span>
+    </div>
 </div>
 <!-- End Footer section -->
 

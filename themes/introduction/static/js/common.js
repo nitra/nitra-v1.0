@@ -3,11 +3,14 @@ $(document).ready(function() {
 
     //var url = $(document).location.hash;
 
+    $('.anchorTop').waypoint( function() {
+        window.location.hash = '';
+    });
+
     $('.anchor').waypoint(function() {
         var location = $(location).attr('href');
         var elem = ($(this.element).attr('id'));
        window.location.hash = elem;
-
 
     });
 

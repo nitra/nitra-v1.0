@@ -48,7 +48,7 @@ Lumik.ru  входит в сотню сайтов с худшими показа
 
 <div class="container">
 <div class="button-wrap">
-<a href="/ru/connection/" class="btn btn-primary btn-lg">Старт</a>
+<a href="/ru/connection/" class="btn btn-primary btn-lg">Хочу апгрейд</a>
 </div>
 </div>
  

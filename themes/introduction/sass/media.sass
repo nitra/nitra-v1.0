@@ -15,13 +15,18 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	body
+		overflow-x: hidden
 	.hero-body
 		padding: 0
 		padding-top: 5rem
 	.hero-foot
 		text-align: left
-		a
+		//display: flex
+		.hero-foot__link
 			display: none
+		a
+			width: 100%	
 		a.mobile
 			display: block
 			position: relative
@@ -29,6 +34,9 @@
 			padding: 10px
 			&:focus
 				outline: none
+	.nav-center
+		display: flex
+		flex-wrap: wrap			
 	#side-nav
 		transform: translateX(-340px)
 	.scanner__item
@@ -143,7 +151,12 @@
 	#scanner .help
 		padding-top: 0
 	.card__link.subtitle.is-4
-		font-size: 16px							
+		font-size: 16px
+	.footer__content
+		flex-wrap: wrap
+		h3
+			margin: 0
+			margin-bottom: 0 !important								
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
