@@ -1,6 +1,6 @@
 baseURL      = "/"
 languageCode = "ru-ru"
-title = "Nitra.ai- Виртуальный IT менеджер, вторая страница Диагностика"
+title = "Nitra.ai- Виртуальный IT менеджер, вторая страница Диагностика Вашего сайта"
 theme = "introduction"
 enforce_ssl         = false
 builddrafts         = false                             # Include pages with draft status of true
