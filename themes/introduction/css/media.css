@@ -1,7 +1,13 @@
 /*==========  Desktop First  ========== */
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   /* */
+  .hero-body {
+    padding-top: 9%;
+    width: 100%;
+    padding-bottom: 8vh;
+    padding-top: 4vh;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {

@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <body>
-
+   <!--  <button id="open" class="openModal">open modal</button> -->
     <!-- {{ partial "nav-list.html" . }} -->
 
     <div id="content" class="">
@@ -12,8 +12,7 @@
         <!-- {{ partial "hero-not-scan.html" . }} -->
 
         {{ partial "scan.html" }} 
-        {{ partial "forecast.html" }} 
-        {{ partial "how-it-work.html" }} 
+        {{ partial "forecast.html" }}  
         {{ partial "advanteges.html" }} 
         {{ partial "social.html" }} 
         {{ if .Site.Params.localTime }}
@@ -42,7 +41,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">GOOGLE CLOUD STARTUP PROGRAM</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">GOOGLE</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -59,17 +58,28 @@
         </div>
     </div>
 
+    <!-- Modals content -->
+    <div class="modalWindow" id="how-it-works">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            {{ partial "how-it-work.html" }}
+        </div>
+        <button class="modal-close is-large" aria-label="close" id="close"></button>
+    </div>
+
+    <div class="modalWindow" id="data-protect">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            {{ partial "data-protect.html" }}
+        </div>
+        <button class="modal-close is-large" aria-label="close" id="close"></button>
+    </div>
+
     <!-- Bitty scrolling links script -->
     <script>
-        $('a[href^="#"]').click(function(e) {
-            e.preventDefault();
-            var target = this.hash;
-            $('html, body').animate({
-                scrollTop: $(target).offset().top
-            }, 500);
-            return false;
-        })
+       
     </script>
     <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/common.js"></script>
 </body>
