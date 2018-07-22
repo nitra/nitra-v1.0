@@ -301,7 +301,7 @@ i { color: #00b8d4; font-weight: bold; width: 30px; display: inline-block; }
   .step-one__text { padding-top: 0; margin-bottom: 1rem; }
   .step { margin-bottom: 1px; }
   .connection__card { padding: 0; margin: 2px; }
-  .connection__card .card-body { padding-top: 7rem; margin-bottom: 1rem; }
+  .connection__card .card-body { padding-top: 7rem; margin-bottom: 1rem; min-height: 226px; }
   .connection__card .card__price { font-size: 2rem; }
   .connection__info { padding-top: 0rem; text-align: left; }
   .brands { padding-top: 2rem; padding-bottom: 2rem; }
@@ -331,7 +331,14 @@ i { color: #00b8d4; font-weight: bold; width: 30px; display: inline-block; }
   #scanner .help { padding-top: 0; }
   .card__link.subtitle.is-4 { font-size: 16px; }
   .footer__content { flex-wrap: wrap; }
-  .footer__content h3 { margin: 0; margin-bottom: 0 !important; } }
+  .footer__content h3 { margin: 0; margin-bottom: 0 !important; }
+  .modalWindow .section { padding-left: 0; padding-right: 0; }
+  .speed-test__number { margin-left: 2rem; }
+  .hero-body { padding-top: 0; }
+  div#payments { padding: 0; }
+  div#payments .section { padding: 0; }
+  #payments .icons .fa { margin-right: 10px; }
+  .footer-text a { display: block; margin: 10px 0; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) { /* */
   #side-nav { width: 250px; }

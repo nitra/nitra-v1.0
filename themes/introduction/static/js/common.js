@@ -31,11 +31,6 @@ $(document).ready(function() {
         return false;
     });
 
-    //var url = $(document).location.hash;
-    $('.openModal').on('click', function(e) {
-        e.preventDefault();
-        
-    });
     
     $('.anchorTop').waypoint( function() {
         window.location.hash = '';
