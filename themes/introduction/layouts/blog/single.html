@@ -11,7 +11,7 @@
 <div class="section {{ if .Site.Params.fadeIn }} fade-in two {{ end }}">
 
     <div class="container"><!-- Begin Nav bar -->
-    {{ partial "nav-single.html" . }}
+    <!-- {{ partial "nav-single.html" . }} -->
     </div><!-- End Nav bar -->
 
     <div class="container {{ if .Site.Params.fadeIn }} fade-in two {{ end }}"><!-- Begin blog title container -->
@@ -60,16 +60,6 @@
     <div class="container markdown {{ if .Site.Params.fadeIn }} fade-in two {{ end }} top-pad"><!-- Begin blog post content -->
         {{ .Content }}
     </div><!-- End blog post content -->
-
-    <div class="disqus">
-        {{ template "_internal/disqus.html" . }}
-    </div>
-
-<div class="container has-text-centered top-pad">
-<hr>
-<a href="{{ .Permalink }}#top"><i class="fa fa-arrow-up"></i></a>
-<hr>
-</div>
 
 {{ partial "footer.html" . }}
 </div><!-- End fade in two -->

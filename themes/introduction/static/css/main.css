@@ -30,6 +30,8 @@
 
 .card-body label { font-size: 14px; }
 
+section { background-color: white; }
+
 .title, .subtitle { margin-bottom: 1.5rem; }
 
 .modal-card { width: 100%; max-width: 1024px; position: relative; }
@@ -108,12 +110,17 @@ h4, h3 { font-size: 1.5rem; line-height: 2rem; padding: 1rem 0; }
 .forecast { padding-bottom: 0rem; }
 .forecast .button-wrap { padding: 3rem 0; }
 
+.forecast-bottom { padding-top: 2rem; }
+
 .advanteges-item h4 { min-height: 96px; }
 
 .btn.btn-primary { min-width: 280px; text-decoration: none; }
 
 .forecast-item { text-align: center; font-size: 1.5rem; }
 .forecast-item img { display: inline-block; box-shadow: none; border-radius: 0px; border: none; }
+
+.features__item { text-align: center; margin-bottom: 3rem; }
+.features__item img { box-shadow: none; border: none; }
 
 .connection__content .required { font-size: 12px; color: red; }
 
@@ -191,6 +198,18 @@ h4, h3 { font-size: 1.5rem; line-height: 2rem; padding: 1rem 0; }
 .row.connection__completed { padding-bottom: 0; }
 
 .connection__completed > div { margin-bottom: 3rem; }
+
+.additional-scan-content { padding: 3rem 0; }
+.additional-scan-content .additional-scan { padding-top: 3rem; }
+.additional-scan-content .additional-scan .additional-scan-form-item { margin-bottom: 2rem; }
+
+.modal { z-index: 2000; }
+
+.tooltip-inner { color: white; font-weight: 400; background-color: #0d8ca0; opacity: 1; min-width: 320px; padding: 15px; }
+
+.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before, .tooltip.bs-tooltip-right .arrow::before { border-right-color: #0d8ca0; }
+
+.tooltip .arrow:before { border-bottom-color: #0d8ca0 !important; border-top-color: #0d8ca0 !important; }
 
 #footer { padding: 3rem 0; }
 

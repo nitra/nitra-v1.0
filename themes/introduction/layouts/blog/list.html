@@ -4,14 +4,14 @@
 <div class="section" id="top"><!-- Parent section -->
 
     <div class="container hero {{ if .Site.Params.fadeIn }} fade-in one {{ end }}"><!-- Begin Title -->
-    <h1 class="bold-title is-1">{{ .Site.Params.blogHead }}</h1>
+    <h1 class="bold-title is-1">Nitra Блог</h1>
     </div><!-- End Title -->
 
     <!-- Everything below fades in two! -->
     <div class="section no-padding {{ if .Site.Params.fadeIn }} fade-in two {{ end }}">
 
     <div class="container"><!-- Begin Nav bar -->
-    {{ partial "nav-list.html" . }}
+   <!--  {{ partial "nav-list.html" . }} -->
     </div><!-- End Nav bar -->
        
     <div class="container"><!-- Begin Blog container -->
@@ -31,7 +31,7 @@
         {{ end }}
     {{ end }}
 
-    <h2 class="title is-2 top-pad">All Posts</h2>
+    <h2 class="title is-2 top-pad">Все статьи</h2>
         <ul>
         {{ range .Data.Pages.ByPublishDate }}
             {{ if eq .Section "blog" }}
@@ -42,11 +42,11 @@
 
     </div><!-- End Blog container -->
 
-<div class="container has-text-centered top-pad">
+<!-- <div class="container has-text-centered top-pad">
 <hr>
 <a href="{{ .Permalink }}#top"><i class="fa fa-arrow-up"></i></a>
 <hr>
-</div>
+</div> -->
 
 {{ partial "footer.html" . }}
 </div><!-- End fade in two -->

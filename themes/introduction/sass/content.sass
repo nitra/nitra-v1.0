@@ -1,6 +1,8 @@
 @import "./component/aside-menu"
 @import "./component/payments"
 
+section
+	background-color: #fff
 
 .title,.subtitle
 	margin-bottom: 1.5rem
@@ -223,6 +225,9 @@ h4,h3
 	.button-wrap
 		padding: 3rem 0
 
+.forecast-bottom
+	padding-top: 2rem
+
 .advanteges-item
 	h4
 		min-height: 96px
@@ -239,6 +244,13 @@ h4,h3
 		box-shadow: none
 		border-radius: 0px
 		border: none
+
+.features__item
+	text-align: center
+	margin-bottom: 3rem
+	img
+		box-shadow: none
+		border: none 
 
 
 //===================================== connection ============================================== // 
@@ -444,6 +456,32 @@ h4,h3
 	> div
 		margin-bottom: 3rem    
 
+.additional-scan-content
+	padding: 3rem 0
+	.additional-scan
+		padding-top: 3rem
+		.additional-scan-form-item
+			margin-bottom: 2rem
+
+.modal
+	z-index: 2000
+
+.tooltip-inner
+	color: #fff
+	font-weight: 400
+	background-color: #0d8ca0
+	opacity: 1
+	min-width: 320px
+	padding: 15px
+
+.tooltip
+	&.bs-tooltip-auto[x-placement^=right] .arrow::before, &.bs-tooltip-right .arrow::before
+		border-right-color: #0d8ca0	
+
+.tooltip .arrow:before
+	border-bottom-color: #0d8ca0 !important
+	border-top-color: #0d8ca0 !important
+ 
 //============= Footer ==============//
 #footer
 	padding: 3rem 0

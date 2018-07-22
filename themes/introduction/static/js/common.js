@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
+    $('[data-toggle="tooltip"]').tooltip()
+
     // Modal windows
     $('.openModal').click(function(e) {
+        $('.modalWindow').removeClass('is-active');
         e.preventDefault();
         let modal = $(this).attr('href');
         $(modal).find('.modal-card').niceScroll({
