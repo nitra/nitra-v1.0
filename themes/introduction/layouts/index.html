@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <body>
-
+   <!--  <button id="open" class="openModal">open modal</button> -->
     <!-- {{ partial "nav-list.html" . }} -->
 
     <div id="content" class="">
@@ -12,9 +12,49 @@
         <!-- {{ partial "hero-not-scan.html" . }} -->
 
         {{ partial "scan.html" }} 
-        {{ partial "forecast.html" }} 
-        {{ partial "how-it-work.html" }} 
-        {{ partial "advanteges.html" }} 
+        {{ partial "forecast.html" }}
+        <div class="section">
+            <div class="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 features__item">
+                            <img src="img/1.svg" alt="">
+                            <h3>Легкий старт</h3>
+                            <p>Стоимость облачного сервиса 20$ в месяц, а подключение проходит в три клика.</p>
+                        </div>
+                        <div class="col-12 col-md-4  features__item">
+                            <img src="img/2.svg" alt="">
+                            <h3>Поддержка клиентов 24/7</h3>
+                            <p>Ребята из службы поддержки помогут с решением технических вопросов, включая помощь с настройкой сервиса.</p>
+                        </div>
+                        <div class="col-12 col-md-4  features__item">
+                            <img src="img/3.svg" alt="">
+                            <h3>Без обязательств</h3>
+                            <p>Ты сможешь легко изменить условия подписки</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>  
+        {{ partial "advanteges.html" }}
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="help title is-4 has-text-centered">
+                            <h2 class="title is-2 has-text-centered">Один клик, и я сделаю Ваш сайт быстрее и безопаснее для пользователей</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="button-wrap">
+                    <a href="#connection" class="btn btn-primary btn-lg openModal">Подключить</a>
+                </div>
+                <!-- <div class="container has-text-centered top-pad"><a href="#top"><i class="fa fa-arrow-up"></i></a></div> -->
+
+            </div>
+        </div> 
         {{ partial "social.html" }} 
         {{ if .Site.Params.localTime }}
         <p>My current local time is <span id="time"></span>.</p>
@@ -30,6 +70,60 @@
         </script>
         {{ end }}
         <!-- End Contact section -->
+        <div class="section">
+            <div class="additional-scan">
+                <div class="container">
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="additional-scan-content">
+                                <h2 class="title is-4 has-text-centered">
+                                    Получить результаты сканирования для другого сайта?
+                                </h2>
+                                <form class="additional-scan">
+                                  <div class="form-row align-items-center">
+                                    <div class="col-sm-3 col-md-4 offset-md-2  additional-scan-form-item" >
+                                      <label class="sr-only" for="inlineFormInputGroupUsername1"></label>
+                                      <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">www</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroupUsername1" placeholder="" required>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-4  additional-scan-form-item" >
+                                      <label class="sr-only" for="inlineFormInputGroupUsername"></label>
+                                      <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">@</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="">
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-7 offset-md-2  additional-scan-form-item" >
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2" required>
+                                        <label class="form-check-label" for="autoSizingCheck2">
+                                         Я даю согласие на получение e-mail сообщений Nitra, ознакомлен с 
+                                         <a class="openModal" href="#privacy-policy">Политикой Конфиденциальности</a> и 
+                                         <a class="openModal" href="#term-use-standart"> Пользовательским соглашением</a>.
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="col-auto  my-1" style="text-align: center;">
+                                          <button type="submit" class="btn btn-primary btn-lg">Получить</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
         {{ partial "footer.html" . }}
 
     </div>
@@ -42,7 +136,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">GOOGLE CLOUD STARTUP PROGRAM</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">GOOGLE</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -59,17 +153,78 @@
         </div>
     </div>
 
-    <!-- Bitty scrolling links script -->
-    <script>
-        $('a[href^="#"]').click(function(e) {
-            e.preventDefault();
-            var target = this.hash;
-            $('html, body').animate({
-                scrollTop: $(target).offset().top
-            }, 500);
-            return false;
-        })
-    </script>
+    <div class="modal fade" id="googleStartup" tabindex="-1" role="dialog" aria-labelledby="googleStartupTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="googleStartupLongTitle"> Nitra - часть Google Startup Program</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    Я рада быть частью GOOGLE CLOUD STARTUP PROGRAM. Использую инфраструктурные мощности Google при сканировании сайта, а это миллионы замеров. Создаю прототип твоего сайта и тестирую все улучшения по повышению безопасности и производительности на прототипе.
+                    Это настоящая симуляция работы и лишь убедившись в выборе наилучшей комбинации, перехожу к интеграции. Это моя фишка!
+                </div>
+                <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals content -->
+    <div class="modalWindow" id="how-it-works">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            {{ partial "how-it-work.html" }}
+        </div>
+        <button class="modal-close is-large" aria-label="close" id="close"></button>
+    </div>
+
+    <div class="modalWindow" id="data-protect">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            {{ partial "data-protect.html" }}
+        </div>
+        <button class="modal-close is-large" aria-label="close" id="close"></button>
+    </div>
+
+    <div class="modalWindow" id="speed">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            {{ partial "speed.html" }}
+        </div>
+        <button class="modal-close is-large" aria-label="close" id="close"></button>
+    </div>
+
+    <div class="modalWindow" id="connection">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            {{ partial "connection.html" }}
+        </div>
+        <button class="modal-close is-large" aria-label="close" id="close"></button>
+    </div>
+
+    <div class="modalWindow" id="term-use-standart">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            {{ partial "term-use-standart.html" }}
+        </div>
+        <button class="modal-close is-large" aria-label="close" id="close"></button>
+    </div>
+
+    <div class="modalWindow" id="privacy-policy">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            {{ partial "privacy-policy.html" }}
+        </div>
+        <button class="modal-close is-large" aria-label="close" id="close"></button>
+    </div>
+
+
     <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/common.js"></script>
 </body>

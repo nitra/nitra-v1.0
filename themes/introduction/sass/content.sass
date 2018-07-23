@@ -1,14 +1,27 @@
 @import "./component/aside-menu"
 @import "./component/payments"
 
+section
+	background-color: #fff
 
 .title,.subtitle
 	margin-bottom: 1.5rem
 
+.modal-card
+	width: 100%
+	max-width: 1024px
+	position: relative
+	//overflow-y: auto
+
+.modal-background
+	background-color: rgba(0, 184, 212, 0.3)
 
 .bold-title
 	font-size: 6rem
-	text-transform: none 
+	text-transform: none
+	svg
+		display: block
+		width: 100% 
 
 .hero
 	width: 100%
@@ -33,8 +46,8 @@
 .hero-body
 	padding-top: 9%
 	width: 100%
-	padding-bottom: 14rem
-	padding-top: 14rem
+	padding-bottom: 17vh
+	padding-top: 15vh
 
 .modal-body
 	padding: 2rem
@@ -164,9 +177,6 @@ h4,h3
 	text-shadow: 1px 1px 1px black
 	padding: 10px 0
 	background: #2eea38
-	// background: -moz-linear-gradient(left, #2eea38 0%, #7cbf24 32%, #cee825 51%, #cee825 66%, #c0c920 71%, #ff1e1e 96%)
-	// background: -webkit-linear-gradient(left, #2eea38 0%, #7cbf24 32%, #cee825 51%, #cee825 66%, #c0c920 71%, #ff1e1e 96%)
-	// background: linear-gradient(to right, #2eea38 0%, #7cbf24 32%, #cee825 51%, #cee825 66%, #c0c920 71%, #ff1e1e 96%)
 	background: linear-gradient(to right, #0d8ca0 1%,#00b8d4 28%,#00b8d4 33%,#00b8d4 48%,#b1cfd3 73%)
 
 .result__time
@@ -174,13 +184,17 @@ h4,h3
 	flex-wrap: wrap
 	align-items: center
 	width: 100%
-	padding-bottom: 10px
+	height: 50px
 	color: #000
-	padding-left: 70%
-	padding-bottom: 40px
 	color: #00b8d4
+	position: relative
 	&:hover
 		text-decoration: none
+	a
+		position: absolute
+		left: 91%
+		top: 10px
+		display: block	
 
 .icon
 	width: 30px
@@ -211,6 +225,13 @@ h4,h3
 	.button-wrap
 		padding: 3rem 0
 
+.forecast-bottom
+	padding-top: 2rem
+
+.advanteges-item
+	h4
+		min-height: 96px
+
 .btn.btn-primary
 	min-width: 280px
 	text-decoration: none
@@ -223,6 +244,13 @@ h4,h3
 		box-shadow: none
 		border-radius: 0px
 		border: none
+
+.features__item
+	text-align: center
+	margin-bottom: 3rem
+	img
+		box-shadow: none
+		border: none 
 
 
 //===================================== connection ============================================== // 
@@ -428,6 +456,32 @@ h4,h3
 	> div
 		margin-bottom: 3rem    
 
+.additional-scan-content
+	padding: 3rem 0
+	.additional-scan
+		padding-top: 3rem
+		.additional-scan-form-item
+			margin-bottom: 2rem
+
+.modal
+	z-index: 2000
+
+.tooltip-inner
+	color: #fff
+	font-weight: 400
+	background-color: #0d8ca0
+	opacity: 1
+	min-width: 320px
+	padding: 15px
+
+.tooltip
+	&.bs-tooltip-auto[x-placement^=right] .arrow::before, &.bs-tooltip-right .arrow::before
+		border-right-color: #0d8ca0	
+
+.tooltip .arrow:before
+	border-bottom-color: #0d8ca0 !important
+	border-top-color: #0d8ca0 !important
+ 
 //============= Footer ==============//
 #footer
 	padding: 3rem 0

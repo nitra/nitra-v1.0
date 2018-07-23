@@ -1,7 +1,13 @@
 /*==========  Desktop First  ========== */
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   /* */
+  .hero-body {
+    padding-top: 9%;
+    width: 100%;
+    padding-bottom: 8vh;
+    padding-top: 4vh;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -122,6 +128,7 @@
   .connection__card .card-body {
     padding-top: 7rem;
     margin-bottom: 1rem;
+    min-height: 226px;
   }
 
   .connection__card .card__price {
@@ -246,6 +253,35 @@
   .footer__content h3 {
     margin: 0;
     margin-bottom: 0 !important;
+  }
+
+  .modalWindow .section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .speed-test__number {
+    margin-left: 2rem;
+  }
+
+  .hero-body {
+    padding-top: 0;
+  }
+
+  div#payments {
+    padding: 0;
+  }
+  div#payments .section {
+    padding: 0;
+  }
+
+  #payments .icons .fa {
+    margin-right: 10px;
+  }
+
+  .footer-text a {
+    display: block;
+    margin: 10px 0;
   }
 }
 /* Custom, iPhone Retina */

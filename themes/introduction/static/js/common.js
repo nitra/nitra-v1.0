@@ -1,8 +1,37 @@
 $(document).ready(function() {
 
+    $('[data-toggle="tooltip"]').tooltip()
 
-    //var url = $(document).location.hash;
+    // Modal windows
+    $('.openModal').click(function(e) {
+        $('.modalWindow').removeClass('is-active');
+        e.preventDefault();
+        let modal = $(this).attr('href');
+        $(modal).find('.modal-card').niceScroll({
+            cursorcolor: "#00b8d4",
+            cursoropacitymin: 1,
+            cursoropacitymax: 1,
+            cursorwidth: "5px",
+            cursorborder: "1px solid #00b8d4",
+            cursorborderradius: "15px"
+        });
+        console.log(modal);
+        $(modal).addClass('is-active');
+    });
+    $('#close, .modal-background').click(function() {
+        $('.modalWindow').removeClass('is-active');
+    });
 
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash;
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 500);
+        return false;
+    });
+
+    
     $('.anchorTop').waypoint( function() {
         window.location.hash = '';
     });
