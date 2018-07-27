@@ -18,6 +18,7 @@ $(document).ready(function() {
         console.log(modal);
         $(modal).addClass('is-active');
     });
+
     $('#close, .modal-background').click(function() {
         $('.modalWindow').removeClass('is-active');
     });
@@ -32,16 +33,66 @@ $(document).ready(function() {
     });
 
     
-    $('.anchorTop').waypoint( function() {
-        window.location.hash = '';
-    });
+    // $('.anchorTop').waypoint( function() {
+    //     window.location.hash = '';
+    // });
 
-    $('.anchor').waypoint(function() {
-        var location = $(location).attr('href');
-        var elem = ($(this.element).attr('id'));
-       window.location.hash = elem;
+    // $('.anchor').waypoint(function() {
+    //     var location = $(window.location.hash).attr('href');
+    //     var elem = ($(this.element).attr('id'));
+    //    window.location.hash = elem;
+    // });
+
+    (function () {
+    //Find all  top,bottom and Hash of each sections
+    var section = $.map($(".anchor"), function (e) {
+        var $e = $(e);
+        var pos = $e.position();
+        return {
+            top: pos.top - 100,
+            bottom: pos.top - 100 + $e.height(),
+            hash: $e.attr('id')
+        };
+    });
+     //Checking scroll 
+    var top = null;
+    var changed = false;
+    var currentHash = null;
+
+    $(window).scroll(function () {
+        var newTop = $(document).scrollTop();
+       
+        changed = newTop != top;
+        if (changed) {
+            top = newTop;
+        }
 
     });
+    //set up for Hash while start scroll and the checking only every 300ms to prevent FPS
+    function step() {
+        if (!changed) {
+            return setTimeout(step, 100);
+            console.log("End");
+        }
+        var count = section.length;
+        var p;
+
+        while (p = section[--count]) {
+            if (p.top >= top || p.bottom <= top) {
+                continue;
+            }
+            if (currentHash == p.hash) {
+                break;
+            }
+            var scrollTop = $(document).scrollTop();
+            window.location.hash = currentHash = p.hash;
+            // prevent browser to scroll
+            $(document).scrollTop(scrollTop);
+        }
+        setTimeout(step, 100);
+    }
+    setTimeout(step, 100);
+})();
 
     // $(".ninja-btn").click(function() {
     //     $(this).toggleClass("active");
