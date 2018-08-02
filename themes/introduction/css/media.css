@@ -300,6 +300,14 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  #forecast {
+    display: none;
+  }
+
+  .forecast.forecast-mobile {
+    display: block;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
