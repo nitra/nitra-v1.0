@@ -90,7 +90,7 @@ defaultContentLanguageInSubdir = true
     sharefacebook       = true
     sharepinterest      = false
     sharegoogleplus     = true
-    footerPhone         = "+380 5772 85314" 
+    footerPhone         = "+380 (57) 728 53 14" 
     email               = "ai@nitra.ai"         # Shows in contact section, or leave blank to omit
     avatar              = "img/profile.jpg"             # Path to image in static folder eg. img/avatar.png, or comment out to remove
     # Navigation
@@ -121,7 +121,7 @@ defaultContentLanguageInSubdir = true
     firstname           = "я - Nitra"
     namesite            = "Nitra"
     tagline             = "первый виртуальный web инженер."
-    optimization        = "Нахожу уязвимости в работе сайта и исправляю их в режиме реального времени. Я, искусственный интеллект, сделаю Ваш сайт быстрым и безопасным для пользователя. Ваш сайт будет соответствовать стандартам Google и других поисковых систем и браузеров."
+    optimization        = "Нахожу уязвимости в работе сайта и исправляю их в режиме реального времени. Я, искусственный интеллект, сделаю Ваш сайт быстрым и безопасным для пользователя. Ваш сайт будет соответствовать стандартам Google и других поисковых систем, браузеров."
     mission             = "Я уже просканировала Ваш сайт и убедилась, что Вы теряете клиентов."
  
     effect              = "Я уже сделала 2,5 млн. замеров на сайте. и убедилась, что твой сайт теряет клиентов."
