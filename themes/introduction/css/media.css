@@ -308,6 +308,20 @@
   .forecast.forecast-mobile {
     display: block;
   }
+  .forecast.forecast-mobile .forecast-title {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  .forecast.forecast-mobile .forecast-item {
+    font-size: 16px;
+  }
+  .forecast.forecast-mobile .forecast-item img {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .forecast.forecast-mobile .forecast-title-warn {
+    margin-bottom: 1.5rem;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
