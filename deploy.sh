@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euxo pipefail
+
 echo -e "\033[0;32mDeploying updates to bitbucket...\033[0m"
 
 # Build the project.
