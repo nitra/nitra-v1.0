@@ -1,5 +1,5 @@
 ---
-title: "Nitra Ai vs Homo Sapiens?"
+title: "Искусственный интеллект vs Homo Sapiens?"
 date: 2017-11-06T12:04:06-05:00
 tags: ['code','ipsum','words']
 ---
