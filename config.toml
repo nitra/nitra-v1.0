@@ -120,7 +120,7 @@ defaultContentLanguageInSubdir = true
     bloghead            = "Blog"
     firstname           = "я - Nitra"
     namesite            = "Nitra"
-    tagline             = "первый виртуальный web инженер."
+    tagline             = "первый виртуальный web-инженер."
     optimization        = "Настраиваю защиту данных и ускоряю работу сайтов."
     mission             = "Я просканировала Ваш сайт и убедилась, что Вы теряете клиентов."
  
