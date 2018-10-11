@@ -1,0 +1,652 @@
+$family-sans-serif: 'Roboto', sans-serif
+$title-stack: 'Roboto', sans-serif
+$body-size: 16px
+$body-color: #4a4a4a
+$background: #fff
+$primary: #00b8d4
+$secondary: #dbdbdb
+$h-color: #222
+$code: $primary
+$code-background: $background
+
+@import "node_modules/bulma/sass/utilities/_all"
+@import "node_modules/bulma/sass/base/_all"
+@import "node_modules/bulma/sass/layout/_all"
+@import "node_modules/bulma/sass/grid/_all"
+@import "node_modules/bulma/sass/elements/_all"
+@import "node_modules/bulma/sass/components/_all"
+
+html
+    background-color: $background
+
+body
+    font-size: $body-size
+    font-family: $family-sans-serif
+    color: $body-color
+    background-color: $background
+
+@-webkit-keyframes fadeIn 
+    from
+        opacity: 0
+    to
+        opacity: 1
+@-moz-keyframes fadeIn 
+    from
+        opacity: 0
+    to
+        opacity: 1
+@keyframes fadeIn 
+    from
+        opacity: 0
+    to
+        opacity: 1
+ 
+.fade-in
+    opacity: 0
+    -webkit-animation: fadeIn ease-in 1
+    -moz-animation: fadeIn ease-in 1
+    animation: fadeIn ease-in 1
+    
+    -webkit-animation-fill-mode: forwards
+    -moz-animation-fill-mode: forwards
+    animation-fill-mode: forwards
+    
+    -webkit-animation-duration: 1s
+    -moz-animation-duration: 1s
+    animation-duration: 1s
+ 
+.fade-in.one
+    -webkit-animation-delay: 0.7s
+    -moz-animation-delay: 0.7s
+    animation-delay: 0.7s
+ 
+.fade-in.two
+    -webkit-animation-delay: 1.4s
+    -moz-animation-delay: 1.4s
+    animation-delay: 1.4s
+ 
+.fade-in.three
+    -webkit-animation-delay: 1.8s
+    -moz-animation-delay: 1.8s
+    animation-delay: 1.8s
+
+.section
+    background-color: $background
+
+.hero
+    background-color: $background
+
+a
+    color: $primary
+    :hover
+        color: #000
+        font-style: none
+    :active
+        color: $primary
+
+.title
+    color: $h-color
+    font-weight: 300
+
+.subtitle
+    color: $h-color
+
+h1
+    color: $h-color
+    font-family: $title-stack
+
+h2
+    color: $h-color
+    font-family: $title-stack
+
+ul
+    padding: 0
+
+img 
+    border-radius: 5px
+    border: 1px solid $secondary
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4)
+
+.container
+    max-width: 1000px
+
+.noborder
+    border-radius: 0px
+    border: none
+    box-shadow: none
+
+.img-responsive 
+    border-radius: 5px
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4)
+
+.avatar 
+    border: none
+    @include mobile
+        max-width: 50%
+
+.thumbnail
+    border: none
+
+.bold-title
+    font-size: 6rem
+    @include mobile
+        font-size: 3rem
+        text-align: center
+
+.tagline
+    font-size: 2.5rem
+    @include mobile
+        font-size: 1.5rem
+
+.top-pad
+    padding-top: 1rem
+
+
+.bottom-pad
+    padding-bottom: 1rem
+
+.no-padding
+    padding: 0
+
+.strong-post-title
+    font-weight: $weight-bold
+
+.post-item
+    display: block
+    list-style: none
+    list-style-position: outside
+    margin-left: 0
+
+.post-data
+    font-size: 1rem
+    line-height: 2rem
+
+.blog-share
+    .icon
+        height: 1rem
+        width: 1rem
+        vertical-align: baseline
+        margin: 0 5px
+
+.nav
+    background-color: $background
+
+.nav-toggle:hover
+        background-color: $background
+
+.nav-item
+    text-transform: uppercase
+    font-size: 14px
+
+.expanding-menu
+    ul
+        list-style: none
+        display: none
+
+.expanding-menu:hover ul
+    display: block
+    transition: height 1s ease
+
+.social-icons
+    padding: 0 10px
+
+.icon
+    height: 2rem
+    width: 2rem
+    margin: 0 10px
+
+.footer-text
+    font-size: 0.8em
+    a
+        color: $body-color
+    .fa
+        font-size: 0.8em
+        vertical-align: baseline
+
+.tags-list
+    width: 70%
+    margin: 0 auto
+    text-align: center
+    font-family: $h-color
+    font-size: 1.5rem
+    @include mobile
+        width: 100%
+
+.tag-cloud
+    font-size: 1.5rem
+    margin-right: 1.5rem
+    @include mobile
+        font-size: 1.5rem
+        margin-right: 1rem
+
+.card
+    box-shadow: none
+
+.card-content
+    background-color: $background
+    font-size: 1.5rem
+    
+.modal-background
+    background-color: rgba(256, 256, 256, 0.90)
+
+.modal-close
+    background-color: #000000
+
+.markdown
+    p
+        margin-bottom: 1em
+    h1
+        font-size: $size-1
+        @include mobile
+            font-size: $size-2
+    h2
+        font-size: $size-2
+        line-height: 1em
+        margin-top: 1em
+        margin-bottom: 0.5em
+        @include mobile
+            font-size: $size-3
+    h3
+        font-size: $size-3
+        @include mobile
+            font-size: $size-4
+    h4
+        font-size: $size-4
+        @include mobile
+            font-size: $size-5
+    h5
+        font-size: $size-5
+    h6
+        font-size: $size-6
+    a
+        color: $primary
+        :hover
+            color: $secondary
+            font-style: none
+        :active
+            color: $primary
+    ul
+        margin-bottom: 1.25rem
+        margin-left: 1.5em
+        list-style: none
+    li
+        list-style-type: disc 
+        margin-left: 1.5em
+        list-style-position: outside
+        padding-left: 1em
+    em
+        font-style: italic
+    strong
+        font-weight: 700
+    hr
+        position: relative
+        margin: 1.75rem 0
+        border: 0
+        border-top: 1px solid $secondary
+    abbr
+        font-size: 0.8rem
+        font-weight: bold
+        color: #666666
+        text-transform: uppercase
+    abbr[title]
+        cursor: help
+        border-bottom: 1px dotted #808080
+    blockquote
+        padding: .5rem 1rem
+        margin: .8rem 0
+        color: #7a7a7a
+        border-left: .25rem solid #e5e5e5
+        blockquote p:last-child
+            margin-bottom: 0
+    table
+        margin: 2em 0 2em 0
+        width: 100%
+        border: 1px solid #e5e5e5
+        border-collapse: collapse
+    td, th
+        padding: .25rem .5rem
+        border: 1px solid #e5e5e5
+        text-align: center
+    tbody tr:nth-child(odd) td,
+    tbody tr:nth-child(odd) th
+        background-color: #f7f7f7
+    strong
+        font-weight: 700
+    pre
+        border-radius: 3px
+
+.hidden
+    display: none
+
+
+.modalWindow 
+    bottom: 0
+    left: 0
+    position: absolute
+    right: 0
+    top: 0
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    display: none
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    overflow: hidden
+    position: fixed
+    z-index: 1986
+
+
+.modalWindow.is-active 
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+
+
+.nav-toggle 
+    cursor: pointer
+    display: block
+    height: 2rem
+    position: relative
+    width: 2rem
+
+
+.nav-toggle span 
+    background-color: #4a4a4a
+    display: block
+    height: 1px
+    left: 50%
+    margin-left: -7px
+    position: absolute
+    top: 50%
+    -webkit-transition: none 86ms ease-out
+    transition: none 86ms ease-out
+    -webkit-transition-property: background, left, opacity, -webkit-transform
+    transition-property: background, left, opacity, -webkit-transform
+    transition-property: background, left, opacity, transform
+    transition-property: background, left, opacity, transform, -webkit-transform
+    width: 15px
+
+
+.nav-toggle span:nth-child(1) 
+    margin-top: -6px
+
+
+.nav-toggle span:nth-child(2) 
+    margin-top: -1px
+
+
+.nav-toggle span:nth-child(3) 
+    margin-top: 4px
+
+
+.nav-toggle:hover 
+    background-color: #fff
+
+
+.nav-toggle.is-active span 
+    background-color: #00b8d4
+
+
+.nav-toggle.is-active span:nth-child(1) 
+    margin-left: -5px
+    -webkit-transform: rotate(45deg)
+    transform: rotate(45deg)
+    -webkit-transform-origin: left top
+    transform-origin: left top
+
+
+.nav-toggle.is-active span:nth-child(2) 
+    opacity: 0
+
+
+.nav-toggle.is-active span:nth-child(3) 
+    margin-left: -5px
+    -webkit-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+    -webkit-transform-origin: left bottom
+    transform-origin: left bottom
+
+
+@media screen and (min-width: 769px) 
+    .nav-toggle 
+        display: none
+    
+
+
+.nav-item 
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-flex: 0
+    -ms-flex-positive: 0
+    flex-grow: 0
+    -ms-flex-negative: 0
+    flex-shrink: 0
+    font-size: 1rem
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    line-height: 1.5
+    padding: 0.5rem 0.75rem
+
+
+.nav-item a 
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-negative: 0
+    flex-shrink: 0
+
+
+.nav-item img 
+    max-height: 1.75rem
+
+
+.nav-item .button+.button 
+    margin-left: 0.75rem
+
+
+.nav-item .tag:first-child:not(:last-child) 
+    margin-right: 0.5rem
+
+
+.nav-item .tag:last-child:not(:first-child) 
+    margin-left: 0.5rem
+
+
+@media screen and (max-width: 768px) 
+    .nav-item 
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+    
+
+
+.nav-item a,
+a.nav-item 
+    color: #7a7a7a
+
+
+.nav-item a:hover,
+a.nav-item:hover 
+    color: #363636
+
+
+.nav-item a.is-active,
+a.nav-item.is-active 
+    color: #363636
+
+
+.nav-item a.is-tab,
+a.nav-item.is-tab 
+    border-bottom: 1px solid transparent
+    border-top: 1px solid transparent
+    padding-bottom: calc(0.75rem - 1px)
+    padding-left: 1rem
+    padding-right: 1rem
+    padding-top: calc(0.75rem - 1px)
+
+
+.nav-item a.is-tab:hover,
+a.nav-item.is-tab:hover 
+    border-bottom-color: #00b8d4
+    border-top-color: transparent
+
+
+.nav-item a.is-tab.is-active,
+a.nav-item.is-tab.is-active 
+    border-bottom: 3px solid #00b8d4
+    color: #00b8d4
+    padding-bottom: calc(0.75rem - 3px)
+
+
+@media screen and (min-width: 1000px) 
+    .nav-item a.is-brand,
+    a.nav-item.is-brand 
+        padding-left: 0
+    
+
+
+@media screen and (max-width: 768px) 
+    .nav-menu 
+        background-color: #fff
+        box-shadow: 0 4px 7px rgba(10, 10, 10, 0.1)
+        left: 0
+        display: none
+        right: 0
+        top: 100%
+        position: absolute
+    
+    .nav-menu .nav-item 
+        border-top: 1px solid rgba(219, 219, 219, 0.5)
+        padding: 0.75rem
+    
+    .nav-menu.is-active 
+        display: block
+    
+
+
+@media screen and (min-width: 769px) and (max-width: 999px) 
+    .nav-menu 
+        padding-right: 1.5rem
+    
+
+
+.nav-left,
+.nav-right 
+    -webkit-box-align: stretch
+    -ms-flex-align: stretch
+    align-items: stretch
+    -ms-flex-preferred-size: 0
+    flex-basis: 0
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-negative: 0
+    flex-shrink: 0
+
+
+.nav-left 
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    overflow: hidden
+    overflow-x: auto
+    white-space: nowrap
+
+
+.nav-center 
+    -webkit-box-align: stretch
+    -ms-flex-align: stretch
+    align-items: stretch
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-flex: 0
+    -ms-flex-positive: 0
+    flex-grow: 0
+    -ms-flex-negative: 0
+    flex-shrink: 0
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    margin-left: auto
+    margin-right: auto
+
+
+.nav-right 
+    -webkit-box-pack: end
+    -ms-flex-pack: end
+    justify-content: flex-end
+
+
+@media screen and (min-width: 769px) 
+    .nav-right 
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+    
+
+
+.nav-left 
+    -webkit-box-pack: start
+    -ms-flex-pack: start
+    justify-content: flex-start
+
+
+@media screen and (max-width: 768px) 
+    .nav-left 
+        display: none
+    
+
+
+.nav 
+    -webkit-box-align: stretch
+    -ms-flex-align: stretch
+    align-items: stretch
+    background-color: #fff
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    min-height: 2rem
+    position: relative
+    text-align: center
+    z-index: 2
+
+
+.nav>.container 
+    -webkit-box-align: stretch
+    -ms-flex-align: stretch
+    align-items: stretch
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    min-height: 2rem
+
+
+.nav.has-shadow 
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1)
+
+
+@media screen and (max-width: 768px) 
+    .nav>.container 
+        width: 100%
+    
+.bold-title 
+    font-size: 5rem
+    margin-bottom: 2rem
+
+hr 
+    background-color: #dbdbdb
+    border: none
+    display: block
+    height: 1px
+    margin: 1rem 0

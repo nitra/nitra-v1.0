@@ -24,3 +24,5 @@ git push origin master --force
 
 # Come Back up to the Project Root
 cd ..
+
+echo "deploy finished"
