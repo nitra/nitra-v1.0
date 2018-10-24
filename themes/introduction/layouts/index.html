@@ -11,8 +11,8 @@
         {{ partial "hero.html" . }}
         <!-- {{ partial "hero-not-scan.html" . }} -->
 
-        {{ partial "scan.html" }} 
-        {{ partial "forecast.html" }}
+        {{ partial "scan.html" . }} 
+        {{ partial "forecast.html" . }}
         <div class="section">
             <div class="features">
                 <div class="container">
@@ -25,7 +25,7 @@
                         <div class="col-12 col-md-4  features__item">
                            
                             <h3>{{ .Site.Params.support24 }}</h3>
-                            <p>{{ .Site.Params.30min }}</p>
+                            <p>{{ .Site.Params.s30min }}</p>
                         </div>
                         <div class="col-12 col-md-4  features__item">
                             
@@ -182,7 +182,7 @@
     <div class="modalWindow" id="data-protect">
         <div class="modal-background"></div>
         <div class="modal-card">
-            {{ partial "data-protect.html" }}
+            {{ partial "data-protect.html" . }}
         </div>
         <button class="modal-close is-large" aria-label="close" id="close"></button>
     </div>
