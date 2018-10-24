@@ -11,8 +11,8 @@
         {{ partial "hero.html" . }}
         <!-- {{ partial "hero-not-scan.html" . }} -->
 
-        {{ partial "scan.html" }} 
-        {{ partial "forecast.html" }}
+        {{ partial "scan.html" . }} 
+        {{ partial "forecast.html" . }}
         <div class="section">
             <div class="features">
                 <div class="container">
@@ -25,7 +25,7 @@
                         <div class="col-12 col-md-4  features__item">
                            
                             <h3>{{ .Site.Params.support24 }}</h3>
-                            <p>{{ .Site.Params.30min }}</p>
+                            <p>{{ .Site.Params.s30min }}</p>
                         </div>
                         <div class="col-12 col-md-4  features__item">
                             
