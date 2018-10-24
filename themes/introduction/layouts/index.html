@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>  
-        {{ partial "advanteges.html" }}
+        {{ partial "advanteges.html" . }}
         <div class="section">
             <div class="container">
                 <div class="row">
@@ -101,7 +101,7 @@
 
             </div>
         </div> 
-        {{ partial "social.html" }} 
+        {{ partial "social.html" . }} 
         {{ if .Site.Params.localTime }}
         <p>My current local time is <span id="time"></span>.</p>
         <script type="text/javascript" src="/js/moment.js"></script>
@@ -174,7 +174,7 @@
     <div class="modalWindow" id="how-it-works">
         <div class="modal-background"></div>
         <div class="modal-card">
-            {{ partial "how-it-work.html" }}
+            {{ partial "how-it-work.html" . }}
         </div>
         <button class="modal-close is-large" aria-label="close" id="close"></button>
     </div>
@@ -190,7 +190,7 @@
     <div class="modalWindow" id="speed">
         <div class="modal-background"></div>
         <div class="modal-card">
-            {{ partial "speed.html" }}
+            {{ partial "speed.html" . }}
         </div>
         <button class="modal-close is-large" aria-label="close" id="close"></button>
     </div>
@@ -198,7 +198,7 @@
     <div class="modalWindow" id="connection">
         <div class="modal-background"></div>
         <div class="modal-card">
-            {{ partial "connection.html" }}
+            {{ partial "connection.html" . }}
         </div>
         <button class="modal-close is-large" aria-label="close" id="close"></button>
     </div>
