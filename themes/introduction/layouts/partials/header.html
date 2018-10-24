@@ -45,10 +45,9 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    {{ $styleLight := resources.Get "sass/light-style.sass" | toCSS | fingerprint }}
-    <link rel="stylesheet" href="{{ $styleLight.Permalink }}">
-    {{ $styleMain := resources.Get "sass/main.sass" | toCSS | fingerprint }}
-    <link rel="stylesheet" href="{{ $styleMain.Permalink }}">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/light-style.css">	    
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+    
 
     <!-- drawer.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">

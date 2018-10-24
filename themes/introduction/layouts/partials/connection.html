@@ -18,13 +18,13 @@
             </div> -->
             <div class="row step step-two">
                 <!-- <div class="col-12 title is-4">Шаг 2</div> -->
-                <div class="col-12"><h2 class="title has-text-centered">Выберите удобный формат подключения:</h2></div>
+                <div class="col-12"><h2 class="title has-text-centered">{{ .Site.Params.choice }}</h2></div>
                 <div class="col-12 connection__card__wrap">
                     <div class="col-6 col-md-4 connection__card">
-                        <div class="card__link subtitle is-4">Ежемесячно</div>
+                        <div class="card__link subtitle is-4">{{ .Site.Params.monthly }}</div>
                         <div class="card-body" >
-                            <p class="card-text">Облачное решение</p>
-                            <h6 class="card-subtitle mb-2 text-muted card__price">20 $</h6>
+                            <p class="card-text">{{ .Site.Params.cloudsolution }}</p>
+                            <h6 class="card-subtitle mb-2 text-muted card__price">{{ .Site.Params.20 }}</h6>
                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                                 <input type="hidden" name="cmd" value="_s-xclick">
                                 <input type="hidden" name="hosted_button_id" value="3UGM3YLJWPQLQ">
@@ -34,10 +34,10 @@
                         </div>                          
                     </div>
                     <div class=" col-6 col-md-4 connection__card">
-                        <div class="card__link subtitle is-4">Единоразово</div>
+                        <div class="card__link subtitle is-4">{{ .Site.Params.one }}</div>
                         <div class="card-body" >
-                            <p class="card-text">Сервер клиента</p>
-                            <h6 class="card-subtitle mb-2 text-muted card__price">200 $</h6>
+                            <p class="card-text">{{ .Site.Params.clientserver }}</p>
+                            <h6 class="card-subtitle mb-2 text-muted card__price">{{ .Site.Params.200 }}</h6>
                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                                 <input type="hidden" name="cmd" value="_s-xclick">
                                 <input type="hidden" name="hosted_button_id" value="45FY6U55YMAXQ">
@@ -51,8 +51,8 @@
 
             <div class="row step step-two">
                 <!-- <div class="col-12 title is-4">Шаг 3</div> -->
-                <div class="col-12">Три клика и Вы можете, самостоятельно или с нашей помощью, настроить облачную интеграцию. 
-                        Кстати, оцените способ подключения. Это моя сильная сторона. Я работаю с сайтом, не нарушая целостность программного кода. Можно выбрать удобный тип подключения: облако или сервер. В случае подключению к серверу необходимо раз в год делать апгрейд версии сервиса. При облачном подключении, каждый месяц, Вы получаете новые и новые технологии, которые помогут сделать Ваш сайт эффективным. Как? Все просто. Искусственный интеллект обучается каждую секунду в отличие от человека, которому сложно успевать за стремительным развитием технологий. 
+                <div class="col-12">{{ .Site.Params.click3 }} 
+                    {{ .Site.Params.rate }} 
                 </div>
 
                

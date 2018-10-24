@@ -1,15 +1,15 @@
 <div class="section scanner anchor" id="scanner">
     <div class="help title is-4 has-text-centered">
-        <h2 class="title is-2 has-text-centered">Диагностика</h2>
+        <h2 class="title is-2 has-text-centered">{{ .Site.Params.diagnostics }}</h2>
     </div>
     <div class="container">
         <div class="row">
             <div class="scanner__item download">
                 <div class="col-12 col-md-6 item__content">
                     <h3 class="title is-3 latest-post-title">
-                        <a href="#speed" class="content__title openModal">Скорость загрузки</a>
+                        <a href="#speed" class="content__title openModal">{{ .Site.Params.speed }}</a>
                     </h3>
-                    <p>Ваш сайт загружается медленно и теряет потенциальных клиентов. Средняя скорость загрузки в сети 4G выше 10 секунд. Ваш сайт использует устаревшие технологии оптимизации передачи данных и шифрования и это мешает его быстродействию. <a href="#speed" class="link-more openModal">Подробнее</a></p>
+                    <p>{{ .Site.Params.argument }} <a href="#speed" class="link-more openModal">{{ .Site.Params.details }}</a></p>
                 </div>
                 <div class="col-12 col-md-6 scanner__item__result">
                     <div class="result__indicators">
@@ -19,16 +19,16 @@
                             <a href="#speed" class="icon openModal"><img src="/img/two-down-chevron.svg" alt=""></a>
                         </div>
                         <div class="result__chart result__chart--time" style="box-shadow: none">
-                            <span>3 сек.</span>
-                            <span>5 сек.</span>
-                            <span>10 сек.</span>
-                            <span>> 10 секунд</span>
+                            <span>{{ .Site.Params.3 }}</span>
+                            <span>{{ .Site.Params.5 }}</span>
+                            <span>{{ .Site.Params.10 }}</span>
+                            <span>{{ .Site.Params.10sec }}</span>
                         </div>
                         <div class="result__chart">
-                            <span>best</span>
-                            <span>better</span>
-                            <span>good</span>
-                            <span>poor...</span>
+                            <span>{{ .Site.Params.best }}</span>
+                            <span>{{ .Site.Params.better }}</span>
+                            <span>{{ .Site.Params.good }}</span>
+                            <span>{{ .Site.Params.poor }}</span>
                         </div>
                     </div>
                 </div>
@@ -37,13 +37,13 @@
             <div class="scanner__item download">
                 <div class="col-12 col-md-6 item__content">
                     <h3 class="title is-3 latest-post-title">
-                         <a href="#data-protect" class="content__title openModal">Защита данных</a>
+                         <a href="#data-protect" class="content__title openModal">{{ .Site.Params.dataprotection }}</a>
                     </h3>
                   
-                    <p>  Google Chrome и другие поисковые системы маркируют Ваш сайт как небезопасный при попытке пользователя ввести URL в строку поиска.
+                    <p>  {{ .Site.Params.argument2 }}
                         
-                     Пользователи прислушиваются к рекомендациям браузеров и стараются не заходить на сайты, которые не защищают персональные данные.
-                        <a href="#data-protect" class="link-more openModal">Почему Google банит Ваш сайт?</a></p>
+                        {{ .Site.Params.argument3 }}
+                        <a href="#data-protect" class="link-more openModal">{{ .Site.Params.whygoogle }}</a></p>
                 </div>
                 <div class="col-12 col-md-6 scanner__item__result">
                     <div class="result__indicators">
@@ -59,10 +59,10 @@
                             <span>больше 10 секунд</span>
                         </div> -->
                         <div class="result__chart">
-                            <span>best</span>
-                            <span>better</span>
-                            <span>good</span>
-                            <span>poor...</span>
+                            <span>{{ .Site.Params.best }}</span>
+                            <span>{{ .Site.Params.better }}</span>
+                            <span>{{ .Site.Params.good }}</span>
+                            <span>{{ .Site.Params.poor }}</span>
                         </div>
                     </div>
                 </div>

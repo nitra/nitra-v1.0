@@ -19,18 +19,18 @@
                     <div class="row">
                         <div class="col-12 col-md-4 features__item">
                             
-                            <h3>Легкий старт</h3>
-                            <p>Стоимость облачного сервиса 20$ в месяц, а подключение занимает 5 минут.</p>
+                            <h3>{{ .Site.Params.start }}</h3>
+                            <p>{{ .Site.Params.price }}</p>
                         </div>
                         <div class="col-12 col-md-4  features__item">
                            
-                            <h3>Поддержка клиентов 24/7</h3>
-                            <p>30 минут - среднее время решения вопросов, связанных с работой сайта. Наши инженеры из службы поддержки помогут с решением технических вопросов, которые выходят за рамки функций Nitra, включая помощь с подключением.</p>
+                            <h3>{{ .Site.Params.support24 }}</h3>
+                            <p>{{ .Site.Params.30min }}</p>
                         </div>
                         <div class="col-12 col-md-4  features__item">
                             
-                            <h3>Без обязательств</h3>
-                            <p>Вы сможете легко изменить условия подписки</p>
+                            <h3>{{ .Site.Params.notobligation }}</h3>
+                            <p>{{ .Site.Params.conditions }}</p>
                         </div>
                     </div>
                     <hr>
@@ -43,7 +43,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="help title is-4 has-text-centered">
-                            <h2 class="title is-2 has-text-centered">Один клик, и я сделаю Ваш сайт быстрее и безопаснее для пользователей</h2>
+                            <h2 class="title is-2 has-text-centered">{{ .Site.Params.push }}</h2>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         <div class="col-12">
                             <div class="additional-scan-content">
                                 <h2 class="title is-4 has-text-centered">
-                                    Получить результаты сканирования для другого сайта?
+                                    {{ .Site.Params.scan }}
                                 </h2>
                                 <form class="additional-scan">
                                   <div class="form-row align-items-center">
@@ -86,7 +86,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="col-auto  my-1" style="text-align: center;">
-                                          <button type="submit" class="btn btn-primary btn-lg">Получить</button>
+                                          <button type="submit" class="btn btn-primary btn-lg">{{ .Site.Params.receive }}</button>
                                         </div>
                                     </div>
                                   </div>
@@ -131,17 +131,17 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Стандарты</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">{{ .Site.Params.standards }}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
                 </div>
                 <div class="modal-body">
-                        Во Всемирной паутине насчитывается больше 2 миллиардов сайтов. Как ты понимаешь, для того, чтобы избежать хаоса с управлением этим множеством ресурсов разработаны правила. 
+                        {{ .Site.Params.text11 }} 
  
-                        Регулирует разработку и внедрение технологических стандартов для сайтов, поисковых систем, браузеров специальная организация World Wide Web Consortium.
+                        {{ .Site.Params.text12 }} 
                          
-                        Моя технология как раз и призвана подтягивать веб-сайты к изменяющимся технологическим стандартам, касающимся безопасности и производительности.
+                        {{ .Site.Params.text13 }} 
                         
                 
                 </div>
@@ -157,14 +157,14 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="googleStartupLongTitle"> Nitra - часть Google Startup Program</h5>
+                    <h5 class="modal-title" id="googleStartupLongTitle"> {{ .Site.Params.partner2 }}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
                 </div>
                 <div class="modal-body">
-                    Я рада быть частью Google Cloud for Startups Program. Использую инфраструктурные мощности Google при сканировании сайта, а это миллионы замеров. Создаю прототип твоего сайта и тестирую все улучшения по повышению безопасности и производительности на прототипе.
-                    Это настоящая симуляция работы и лишь убедившись в выборе наилучшей комбинации, перехожу к интеграции. Это моя фишка!
+                    {{ .Site.Params.effect1 }}
+                    {{ .Site.Params.effect2 }}
                 </div>
             </div>
         </div>

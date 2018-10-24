@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="help title is-4 has-text-centered">
-                    <h2 class="title is-2 has-text-centered">Защита данных </h2>
+                    <h2 class="title is-2 has-text-centered">{{ .Site.Params.dataprotection }} </h2>
                 </div>
             </div>
         </div>
@@ -21,17 +21,17 @@
                     </div>
                 </div>
                 <div class="row data-protect second"></div>
-                <p>Лишь малая часть пользователей рискнет перейти на твой сайт после такого грозного предупреждения.</p>
+                <p>{{ .Site.Params.text14 }}</p>
                 <p>
                 </p>
                 <p> Теперь самое важное, если настроить с помощью специалиста <a href="#" data-toggle="modal"  data-target="#HTTPS">HTTPS</a>, Вы получите замедление скорости работы сайта.</p>
-                <p>Почему? Любой механизм шифрования можно сравнить с дополнительным замком на двери дома, чтобы открыть его, даже при наличии ключа, необходимо время.</p>
+                <p>{{ .Site.Params.text15 }}</p>
                 <p> Мое преимущество в том, что внедряя технологии защиты данных, я добавляю технологии <a href="#" data-toggle="modal" data-target="#HTTP2">HTTP/2</a>, 
                     <a href="#" data-toggle="modal" data-target="#ALPN">ALPN</a>, 
                     <a href="#" data-toggle="modal" data-target="#HSTS">HSTS</a>, которые помогают нейтрализовать замедление скорости работы сайта. </p>
                 <div class="container">
                     <div class="button-wrap">
-                        <a href="#connection" class="btn btn-primary btn-lg openModal">Подключить</a>
+                        <a href="#connection" class="btn btn-primary btn-lg openModal">{{ .Site.Params.plug }}</a>
                     </div>
                 </div>
             </div>

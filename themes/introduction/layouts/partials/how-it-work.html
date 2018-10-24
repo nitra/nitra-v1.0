@@ -3,20 +3,20 @@
         <div class="row">
             <div class="col-12">
                 <div class="help title is-4 has-text-centered">
-                    <h2 class="title is-2 has-text-centered">Как я работаю?</h2>
+                    <h2 class="title is-2 has-text-centered">{{ .Site.Params.how }}</h2>
                 </div>
             </div>
         </div>
         <div class="sigle__page__content">
-            <div class="col-12"><p><span>Шаг 1</span>&nbsp; <span class="title is-4">Подключение</span>.</p>
-                <p>Просто и быстро. 5 минут, пара кликов. Наши инженеры помогут с подключением.</p>
+            <div class="col-12"><p><span>{{ .Site.Params.step1 }}</span>&nbsp; <span class="title is-4">{{ .Site.Params.plug1 }}</span>.</p>
+                <p>{{ .Site.Params.argument9 }}</p>
                 <p>&nbsp;</p>
-                <p><span>Шаг 2</span> &nbsp; <span class="title is-4">Клон</span>. <p>Специалистам это точно не по силам. Nitra cоздает клон Вашего сайта. Именно на клоне сайта, чтобы не перегружать ресурс, проводится сканирование  и тестируются все улучшения в условиях его реальной деятельности. Проверяется работоспособность сайта, каждой страницы, каждого блока. Для этого используются сверхмощные серверные решения <a hrev="URL">Google</a> <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Подробнее</a></p>
+                <p><span>{{ .Site.Params.step2 }}</span> &nbsp; <span class="title is-4">{{ .Site.Params.klon }}</span>. <p>{{ .Site.Params.definition8 }} <a hrev="URL">{{ .Site.Params.google}}</a> <a href="#" data-toggle="modal" data-target="#exampleModalCenter">{{ .Site.Params.details }}</a></p>
                 <p>&nbsp;</p>
-                <p><span>Шаг 3</span> &nbsp; <span class="title is-4">Апгрейд сайта.</span>  </p>
-                 <p>Nitra не затрагивает программный код Вашего сайта и исправляет несовершенства в шифровании данных, которые мешают поисковикам "считывать" сайт. </p>
+                <p><span>{{ .Site.Params.step3 }}</span> &nbsp; <span class="title is-4">{{ .Site.Params.upgradesite }}</span>  </p>
+                 <p>{{ .Site.Params.argument8 }} </p>
                 <ol>
-                    <li><p>Сайт - не арт-объект. Сайт должен эффективно работать с технологиями:
+                    <li><p>{{ .Site.Params.argument10 }}
                         <a href="#"  data-toggle="modal"  data-target="#HTTPS">HTTPS</a>, 
                         <a href="#"  data-toggle="modal"  data-target="#HTTPS2">HTTP/2</a>, 
                         <a href="#"  data-toggle="modal"  data-target="#IPV6">IPV6</a>, 
@@ -27,8 +27,8 @@
                         <a href="#"  data-toggle="modal"  data-target="#OCSP">OCSP</a> и др.</p></li>
                 
                   
-                        <p><span>Шаг 4</span> &nbsp; <span class="title is-4">Мониторинг и моментальная реакция.</span>  </p>
-                    <p>24/7 искусственный интеллект мониторит работу Вашего сайта. В случае выявления сбоев - сразу занимается исправлением.</p></li>
+                        <p><span>{{ .Site.Params.step4 }}</span> &nbsp; <span class="title is-4">{{ .Site.Params.monitoring }}</span>  </p>
+                    <p>{{ .Site.Params.argument11 }}</p></li>
                 </ol>
                 <p>&nbsp;</p>
             </div>

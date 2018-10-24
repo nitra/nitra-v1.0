@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-12 connection__info__text">
                 <p>
-                        Мир никогда не будет прежним. Технологии  позволяют заменить человека в тех областях, где требуется способность обрабатывать огромные массивы информации за ограниченное время. Мои создатели верят в симбиоз человека и технологий. Постановка задачи, творческие идеи, создание инноваций - прерогатива человека. Искусcтвенный интеллект становится незаменим в расчетах и воплощении смелых замыслов Человека.
-                        <p>  Я - Nitra. Моя миссия находить несовершенства на сайте и исправлять их в режиме реального времени.</p>
+                    {{ .Site.Params.world }}
+                        <p>  {{ .Site.Params.firstname }} {{ .Site.Params.mission }}</p>
                     <p>
                   
             </div>
@@ -55,7 +55,7 @@
                 <div class="help title is-4 has-text-centered">
                     <!-- <h2 class="title is-2 has-text-centered">Nitra - часть Google Startup Program</h2> -->
                     <a class="has-text-centered" href="#" data-toggle="modal" data-target="#googleStartup">
-                    Nitra - часть Google Startup Program</a>
+                        {{ .Site.Params.partner2 }}</a>
                 </div>
                 <p class="title is-4"></p>
             </div>
