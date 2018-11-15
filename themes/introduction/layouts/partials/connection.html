@@ -51,8 +51,10 @@
 
             <div class="row step step-two">
                 <!-- <div class="col-12 title is-4">Шаг 3</div> -->
-                <div class="col-12">{{ .Site.Params.click3 }} 
-                    {{ .Site.Params.rate }} 
+                <div class="col-12"> 
+                    {{ with .Site.GetPage "/server-cloud" }} 
+                    {{ .Content }}  
+                    {{ end }}
                 </div>
 
                
