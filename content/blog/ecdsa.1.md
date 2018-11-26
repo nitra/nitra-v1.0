@@ -2,9 +2,11 @@
 <div class="only-for anonim">
 title: "ECDSA – защита от взлома и быстрая верификация"
 </div>
+
 <div class="only-for client-enabled">
 title: "ECDSA – теперь ваш сайт еще безопаснее!"
 </div>
+
 <div class="only-for client-disabled">
 title: "Алгоритм ECDSA используется Вашим сайтом"
 </div>
