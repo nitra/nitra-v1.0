@@ -8,7 +8,7 @@ title: "ECDSA – теперь ваш сайт еще безопаснее!"
 <div class="only-for client-disabled">
 title: "Алгоритм ECDSA используется Вашим сайтом"
 </div>
-data: 2018-11-21T13:19:25+08:00
+
 
 ---
  <div class="only-for anonim">
