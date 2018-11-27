@@ -7196,3 +7196,5 @@ img {
 .hidden {
     display: none
 }
+
+.only-for { display: none; }

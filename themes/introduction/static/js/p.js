@@ -51,4 +51,18 @@ function unhighlight(gad) {
     }); 
 }
 
+// SWITCH TYPE of CLIENT (client, client-enabled, client-disabled, anonim - by default)
+function setTextVisibility() {
+    var params = new URLSearchParams(location.search); 
+    var user = params.get('t') || 'anonim'; 
+    var elements = document.getElementsByClassName("only-for " + user);
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = "block";
+    }
+}
+$(document).ready(function() { 
+    setTextVisibility();
+});
+// end of switch
+
 //    Object.keys(localStorage).forEach(key => console.log(localStorage[key]));
