@@ -55,7 +55,7 @@ function unhighlight(gad) {
 function setTextVisibility() {
     var params = new URLSearchParams(location.search); 
     var user = params.get('t') || 'anonim'; 
-    var elements = document.getElementsByClassName("only-for " + user);
+    var elements = document.querySelectorAll(".only-for[class*=" + user + "]");
     for (var i = 0; i < elements.length; i++) {
         elements[i].style.display = "block";
     }
@@ -64,5 +64,8 @@ $(document).ready(function() {
     setTextVisibility();
 });
 // end of switch
+
+
+
 
 //    Object.keys(localStorage).forEach(key => console.log(localStorage[key]));
